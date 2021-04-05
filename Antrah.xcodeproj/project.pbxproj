@@ -16,6 +16,26 @@
 		43B278E826190E61006470AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B278E626190E61006470AB /* LaunchScreen.storyboard */; };
 		43B278F326190E61006470AB /* AntrahTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278F226190E61006470AB /* AntrahTests.swift */; };
 		43B278FE26190E61006470AB /* AntrahUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278FD26190E61006470AB /* AntrahUITests.swift */; };
+		43B2791226190ECB006470AB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2791126190ECB006470AB /* MainCoordinator.swift */; };
+		43B2791B26192726006470AB /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2791A26192726006470AB /* UIFont+Extensions.swift */; };
+		43B2792426192797006470AB /* AskQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2792326192797006470AB /* AskQuestionViewController.swift */; };
+		43B279292619286E006470AB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B279282619286E006470AB /* UIColor+Extensions.swift */; };
+		43B2792F26192E49006470AB /* VerticalScrollStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2792E26192E49006470AB /* VerticalScrollStackView.swift */; };
+		43B2793726192F1D006470AB /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2793626192F1D006470AB /* UIStackView+Extensions.swift */; };
+		43EA8B082619662900CC2626 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B072619662900CC2626 /* CGFloat+Extensions.swift */; };
+		43EA8B0D2619713D00CC2626 /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B0C2619713D00CC2626 /* BorderView.swift */; };
+		43EA8B12261A7D3700CC2626 /* QuestionFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B11261A7D3700CC2626 /* QuestionFeedViewController.swift */; };
+		43EA8B18261A7DF300CC2626 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B17261A7DF300CC2626 /* Question.swift */; };
+		43EA8B1D261A7E7300CC2626 /* QuestionTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B1C261A7E7300CC2626 /* QuestionTag.swift */; };
+		43EA8B22261A7F8300CC2626 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B21261A7F8300CC2626 /* User.swift */; };
+		43EA8B27261A7FDD00CC2626 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B26261A7FDD00CC2626 /* Vote.swift */; };
+		43EA8B2C261A802100CC2626 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B2B261A802100CC2626 /* Answer.swift */; };
+		43EA8B31261A859A00CC2626 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B30261A859A00CC2626 /* UITableViewCell+Extensions.swift */; };
+		43EA8B36261A85F000CC2626 /* QuestionFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B35261A85F000CC2626 /* QuestionFeedTableViewCell.swift */; };
+		43EA8B3E261ACAEC00CC2626 /* NotificationFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B3D261ACAEC00CC2626 /* NotificationFeedViewController.swift */; };
+		43EA8B43261ACCE700CC2626 /* NotificationFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B42261ACCE700CC2626 /* NotificationFeedTableViewCell.swift */; };
+		43EA8B48261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B47261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift */; };
+		43EA8B55261AD7B600CC2626 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B54261AD7B600CC2626 /* NSAttributedString+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +71,26 @@
 		43B278F926190E61006470AB /* AntrahUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntrahUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B278FD26190E61006470AB /* AntrahUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntrahUITests.swift; sourceTree = "<group>"; };
 		43B278FF26190E61006470AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B2791126190ECB006470AB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		43B2791A26192726006470AB /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		43B2792326192797006470AB /* AskQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionViewController.swift; sourceTree = "<group>"; };
+		43B279282619286E006470AB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		43B2792E26192E49006470AB /* VerticalScrollStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollStackView.swift; sourceTree = "<group>"; };
+		43B2793626192F1D006470AB /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		43EA8B072619662900CC2626 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		43EA8B0C2619713D00CC2626 /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		43EA8B11261A7D3700CC2626 /* QuestionFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFeedViewController.swift; sourceTree = "<group>"; };
+		43EA8B17261A7DF300CC2626 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		43EA8B1C261A7E7300CC2626 /* QuestionTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTag.swift; sourceTree = "<group>"; };
+		43EA8B21261A7F8300CC2626 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		43EA8B26261A7FDD00CC2626 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		43EA8B2B261A802100CC2626 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		43EA8B30261A859A00CC2626 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		43EA8B35261A85F000CC2626 /* QuestionFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFeedTableViewCell.swift; sourceTree = "<group>"; };
+		43EA8B3D261ACAEC00CC2626 /* NotificationFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFeedViewController.swift; sourceTree = "<group>"; };
+		43EA8B42261ACCE700CC2626 /* NotificationFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFeedTableViewCell.swift; sourceTree = "<group>"; };
+		43EA8B47261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		43EA8B54261AD7B600CC2626 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +141,7 @@
 		43B278D726190E60006470AB /* Antrah */ = {
 			isa = PBXGroup;
 			children = (
+				43B2790F26190EB3006470AB /* src */,
 				43B278D826190E60006470AB /* AppDelegate.swift */,
 				43B278DA26190E60006470AB /* SceneDelegate.swift */,
 				43B278DC26190E60006470AB /* ViewController.swift */,
@@ -129,6 +170,73 @@
 				43B278FF26190E61006470AB /* Info.plist */,
 			);
 			path = AntrahUITests;
+			sourceTree = "<group>";
+		};
+		43B2790F26190EB3006470AB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				43EA8B16261A7DE700CC2626 /* Models */,
+				43B2792D26192E1E006470AB /* Views */,
+				43B2792226192775006470AB /* ViewControllers */,
+				43B2791926192714006470AB /* Extensions */,
+				43B2791026190EB8006470AB /* Coordinators */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		43B2791026190EB8006470AB /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				43B2791126190ECB006470AB /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		43B2791926192714006470AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43B2791A26192726006470AB /* UIFont+Extensions.swift */,
+				43B279282619286E006470AB /* UIColor+Extensions.swift */,
+				43B2793626192F1D006470AB /* UIStackView+Extensions.swift */,
+				43EA8B072619662900CC2626 /* CGFloat+Extensions.swift */,
+				43EA8B30261A859A00CC2626 /* UITableViewCell+Extensions.swift */,
+				43EA8B47261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift */,
+				43EA8B54261AD7B600CC2626 /* NSAttributedString+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		43B2792226192775006470AB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43B2792326192797006470AB /* AskQuestionViewController.swift */,
+				43EA8B11261A7D3700CC2626 /* QuestionFeedViewController.swift */,
+				43EA8B3D261ACAEC00CC2626 /* NotificationFeedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43B2792D26192E1E006470AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43B2792E26192E49006470AB /* VerticalScrollStackView.swift */,
+				43EA8B0C2619713D00CC2626 /* BorderView.swift */,
+				43EA8B35261A85F000CC2626 /* QuestionFeedTableViewCell.swift */,
+				43EA8B42261ACCE700CC2626 /* NotificationFeedTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43EA8B16261A7DE700CC2626 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43EA8B17261A7DF300CC2626 /* Question.swift */,
+				43EA8B1C261A7E7300CC2626 /* QuestionTag.swift */,
+				43EA8B21261A7F8300CC2626 /* User.swift */,
+				43EA8B26261A7FDD00CC2626 /* Vote.swift */,
+				43EA8B2B261A802100CC2626 /* Answer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +369,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EA8B082619662900CC2626 /* CGFloat+Extensions.swift in Sources */,
+				43EA8B55261AD7B600CC2626 /* NSAttributedString+Extensions.swift in Sources */,
+				43EA8B1D261A7E7300CC2626 /* QuestionTag.swift in Sources */,
 				43B278DD26190E60006470AB /* ViewController.swift in Sources */,
+				43EA8B2C261A802100CC2626 /* Answer.swift in Sources */,
 				43B278E326190E60006470AB /* Antrah.xcdatamodeld in Sources */,
+				43EA8B22261A7F8300CC2626 /* User.swift in Sources */,
 				43B278D926190E60006470AB /* AppDelegate.swift in Sources */,
+				43EA8B0D2619713D00CC2626 /* BorderView.swift in Sources */,
+				43EA8B18261A7DF300CC2626 /* Question.swift in Sources */,
+				43EA8B31261A859A00CC2626 /* UITableViewCell+Extensions.swift in Sources */,
+				43B279292619286E006470AB /* UIColor+Extensions.swift in Sources */,
+				43B2791226190ECB006470AB /* MainCoordinator.swift in Sources */,
+				43B2792426192797006470AB /* AskQuestionViewController.swift in Sources */,
+				43EA8B27261A7FDD00CC2626 /* Vote.swift in Sources */,
+				43B2791B26192726006470AB /* UIFont+Extensions.swift in Sources */,
+				43EA8B3E261ACAEC00CC2626 /* NotificationFeedViewController.swift in Sources */,
+				43EA8B48261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift in Sources */,
+				43B2793726192F1D006470AB /* UIStackView+Extensions.swift in Sources */,
+				43B2792F26192E49006470AB /* VerticalScrollStackView.swift in Sources */,
+				43EA8B36261A85F000CC2626 /* QuestionFeedTableViewCell.swift in Sources */,
 				43B278DB26190E60006470AB /* SceneDelegate.swift in Sources */,
+				43EA8B43261ACCE700CC2626 /* NotificationFeedTableViewCell.swift in Sources */,
+				43EA8B12261A7D3700CC2626 /* QuestionFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
