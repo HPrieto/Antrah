@@ -11,6 +11,7 @@ class NotificationFeedTableViewCell: UITableViewCell {
     
     enum Dimensions: CGFloat {
         case profileImageViewHeightWidth = 30
+        case dateLabelWidth = 45
     }
     
     // MARK: - Subviews
@@ -57,7 +58,7 @@ class NotificationFeedTableViewCell: UITableViewCell {
         
         dateLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: CGFloat.spacingMicro12px.negative).isActive = true
         dateLabel.topAnchor.constraint(equalTo: bodyLabel.topAnchor).isActive = true
-        dateLabel.widthAnchor.constraint(equalToConstant: Dimensions.profileImageViewHeightWidth.rawValue).isActive = true
+        dateLabel.widthAnchor.constraint(equalToConstant: Dimensions.dateLabelWidth.rawValue).isActive = true
         
         bodyLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: .spacingMicro8px).isActive = true
         bodyLabel.rightAnchor.constraint(equalTo: dateLabel.leftAnchor, constant: CGFloat.spacingMicro8px.negative).isActive = true

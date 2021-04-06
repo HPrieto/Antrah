@@ -147,7 +147,7 @@ class AskQuestionViewController: UIViewController {
     private(set) lazy var submitButton: UIButton = { [unowned self] in
         let view = UIButton()
         view.setTitle(Strings.submitButtonTitle.rawValue, for: .normal)
-        view.titleLabel?.font = .demiBold(ofSize: .fontLarge16px)
+        view.titleLabel?.font = .demiBold(ofSize: .fontMedium14px)
         view.backgroundColor = .black
         view.titleLabel?.textColor = .white
         view.layer.masksToBounds = true

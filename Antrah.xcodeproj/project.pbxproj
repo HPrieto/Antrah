@@ -36,6 +36,8 @@
 		43EA8B43261ACCE700CC2626 /* NotificationFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B42261ACCE700CC2626 /* NotificationFeedTableViewCell.swift */; };
 		43EA8B48261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B47261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift */; };
 		43EA8B55261AD7B600CC2626 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B54261AD7B600CC2626 /* NSAttributedString+Extensions.swift */; };
+		43EA8B5A261C1CA400CC2626 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B59261C1CA400CC2626 /* SignupViewController.swift */; };
+		43EA8B5F261C1FF700CC2626 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B5E261C1FF700CC2626 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		43EA8B42261ACCE700CC2626 /* NotificationFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFeedTableViewCell.swift; sourceTree = "<group>"; };
 		43EA8B47261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 		43EA8B54261AD7B600CC2626 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		43EA8B59261C1CA400CC2626 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		43EA8B5E261C1FF700CC2626 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,8 @@
 				43B2792326192797006470AB /* AskQuestionViewController.swift */,
 				43EA8B11261A7D3700CC2626 /* QuestionFeedViewController.swift */,
 				43EA8B3D261ACAEC00CC2626 /* NotificationFeedViewController.swift */,
+				43EA8B59261C1CA400CC2626 /* SignupViewController.swift */,
+				43EA8B5E261C1FF700CC2626 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -379,6 +385,7 @@
 				43B278D926190E60006470AB /* AppDelegate.swift in Sources */,
 				43EA8B0D2619713D00CC2626 /* BorderView.swift in Sources */,
 				43EA8B18261A7DF300CC2626 /* Question.swift in Sources */,
+				43EA8B5F261C1FF700CC2626 /* ProfileViewController.swift in Sources */,
 				43EA8B31261A859A00CC2626 /* UITableViewCell+Extensions.swift in Sources */,
 				43B279292619286E006470AB /* UIColor+Extensions.swift in Sources */,
 				43B2791226190ECB006470AB /* MainCoordinator.swift in Sources */,
@@ -391,6 +398,7 @@
 				43B2792F26192E49006470AB /* VerticalScrollStackView.swift in Sources */,
 				43EA8B36261A85F000CC2626 /* QuestionFeedTableViewCell.swift in Sources */,
 				43B278DB26190E60006470AB /* SceneDelegate.swift in Sources */,
+				43EA8B5A261C1CA400CC2626 /* SignupViewController.swift in Sources */,
 				43EA8B43261ACCE700CC2626 /* NotificationFeedTableViewCell.swift in Sources */,
 				43EA8B12261A7D3700CC2626 /* QuestionFeedViewController.swift in Sources */,
 			);

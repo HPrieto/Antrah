@@ -60,6 +60,7 @@ class MainCoordinator {
     
     enum Destination {
         case root
+        case profile
     }
     
     // MARK: - Private Properties
@@ -76,6 +77,11 @@ class MainCoordinator {
         return controller
     }()
     
+    private(set) lazy var signupViewController: UIViewController = { [unowned self] in
+        let controller = SignupViewController()
+        return UINavigationController(rootViewController: controller)
+    }()
+    
     private(set) lazy var homeViewController: UIViewController = { [unowned self] in
         let controller = QuestionFeedViewController()
         controller.view.backgroundColor = .accentGray
@@ -85,7 +91,7 @@ class MainCoordinator {
                 image: UIImage(systemName: "person"),
                 style: .plain,
                 target: self,
-                action: #selector(handleAsk(sender:))
+                action: #selector(handleShowProfile(sender:))
             ),
             UIBarButtonItem(
                 image: UIImage(systemName: "square.and.pencil"),
@@ -114,6 +120,19 @@ class MainCoordinator {
         return UINavigationController(rootViewController: controller)
     }()
     
+    private(set) lazy var profileViewController: UIViewController = { [unowned self] in
+        let controller = ProfileViewController()
+        controller.navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(
+                image: UIImage(systemName: "gear"),
+                style: .plain,
+                target: self,
+                action: #selector(handleShowSettings(sender:))
+            )
+        ]
+        return controller
+    }()
+    
     // MARK: - Handlers
     
     @objc private func handleAsk(sender: UIBarButtonItem) {
@@ -132,10 +151,27 @@ class MainCoordinator {
         )
     }
     
+    @objc private func handleShowSettings(sender: UIBarButtonItem) {
+        rootViewController.present(
+            signupViewController,
+            animated: true,
+            completion: nil
+        )
+    }
+    
+    @objc private func handleShowProfile(sender: UIBarButtonItem) {
+        show(.profile)
+    }
+    
     // MARK: - Public Methods
     
     public func show(_ destination: Destination = .root) {
-        
+        switch destination {
+        case .profile:
+            homeViewController.navigationController?.pushViewController(profileViewController, animated: true)
+        default:
+            break
+        }
     }
     
     // MARK: - Init

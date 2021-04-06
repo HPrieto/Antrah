@@ -39,7 +39,13 @@ class QuestionFeedTableViewCell: UITableViewCell {
         let view = UIButton()
         view.backgroundColor = .clear
         view.tintColor = .lightGray
-        view.setImage(UIImage(systemName: "chevron.up"), for: .normal)
+        view.setImage(
+            UIImage(
+                systemName: "chevron.up",
+                withConfiguration: UIImage.SymbolConfiguration(weight: .bold)
+            ),
+            for: .normal
+        )
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -57,7 +63,12 @@ class QuestionFeedTableViewCell: UITableViewCell {
         let view = UIButton()
         view.backgroundColor = .clear
         view.tintColor = .lightGray
-        view.setImage(UIImage(systemName: "bubble.left.fill"), for: .normal)
+        view.setImage(
+            UIImage(
+                systemName: "bubble.left.fill"
+            ),
+            for: .normal
+        )
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
