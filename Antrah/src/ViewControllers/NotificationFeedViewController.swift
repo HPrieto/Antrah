@@ -17,7 +17,8 @@ class NotificationFeedViewController: UIViewController {
     
     private(set) lazy var leftBarButtonItem: UIBarButtonItem? = { [unowned self] in
         UIBarButtonItem(
-            barButtonSystemItem: .close,
+            systemName: "chevron.left",
+            weight: .medium,
             target: self,
             action: #selector(handleClose(sender:))
         )
@@ -36,13 +37,15 @@ class NotificationFeedViewController: UIViewController {
     // MARK: - Handlers
     
     @objc private func handleClose(sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Setup
     
     private func setup() {
         view.backgroundColor = .white
+        
+        navigationItem.title = "Notifications"
         navigationItem.leftBarButtonItem = leftBarButtonItem
         
         view.addSubview(tableView)

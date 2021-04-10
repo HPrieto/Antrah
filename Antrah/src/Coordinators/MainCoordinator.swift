@@ -61,6 +61,8 @@ class MainCoordinator {
     enum Destination {
         case root
         case profile
+        case settings
+        case notifications
     }
     
     // MARK: - Private Properties
@@ -69,39 +71,35 @@ class MainCoordinator {
     
     // MARK: - ViewControllers
     
-    private(set) lazy var rootViewController: UITabBarController = {
-        let controller = UITabBarController()
-        controller.viewControllers = [
-            UINavigationController(rootViewController: homeViewController)
-        ]
-        return controller
-    }()
-    
     private(set) lazy var signupViewController: UIViewController = { [unowned self] in
         let controller = SignupViewController()
         return UINavigationController(rootViewController: controller)
     }()
     
-    private(set) lazy var homeViewController: UIViewController = { [unowned self] in
+    private(set) lazy var rootNavigationController: UINavigationController = {
+        UINavigationController(rootViewController: questionFeedViewController)
+    }()
+    
+    private(set) lazy var questionFeedViewController: UIViewController = { [unowned self] in
         let controller = QuestionFeedViewController()
         controller.view.backgroundColor = .accentGray
         controller.tabBarItem = Tab.tabBarItem(for: .home)
         controller.navigationItem.rightBarButtonItems = [
             UIBarButtonItem(
-                image: UIImage(systemName: "person"),
-                style: .plain,
+                systemName: "gear",
+                weight: .medium,
                 target: self,
-                action: #selector(handleShowProfile(sender:))
+                action: #selector(handleShowSettings(sender:))
             ),
             UIBarButtonItem(
-                image: UIImage(systemName: "square.and.pencil"),
-                style: .plain,
+                systemName: "square.and.pencil",
+                weight: .medium,
                 target: self,
                 action: #selector(handleAsk(sender:))
             ),
             UIBarButtonItem(
-                image: UIImage(systemName: "bell"),
-                style: .plain,
+                systemName: "bell",
+                weight: .medium,
                 target: self,
                 action: #selector(handleNotifications(sender:))
             )
@@ -111,7 +109,7 @@ class MainCoordinator {
     
     private(set) lazy var notificationFeedViewController: UIViewController = {
         let controller = NotificationFeedViewController()
-        return UINavigationController(rootViewController: controller)
+        return controller
     }()
     
     private(set) lazy var askQuestionViewController: UIViewController = { [unowned self] in
@@ -122,21 +120,18 @@ class MainCoordinator {
     
     private(set) lazy var profileViewController: UIViewController = { [unowned self] in
         let controller = ProfileViewController()
-        controller.navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(
-                image: UIImage(systemName: "gear"),
-                style: .plain,
-                target: self,
-                action: #selector(handleShowSettings(sender:))
-            )
-        ]
+        return controller
+    }()
+    
+    private(set) lazy var settingsViewController: UIViewController = {
+        let controller = SettingsViewController()
         return controller
     }()
     
     // MARK: - Handlers
     
     @objc private func handleAsk(sender: UIBarButtonItem) {
-        rootViewController.present(
+        questionFeedViewController.present(
             askQuestionViewController,
             animated: true,
             completion: nil
@@ -144,19 +139,11 @@ class MainCoordinator {
     }
     
     @objc private func handleNotifications(sender: UIBarButtonItem) {
-        rootViewController.present(
-            notificationFeedViewController,
-            animated: true,
-            completion: nil
-        )
+        show(.notifications)
     }
     
     @objc private func handleShowSettings(sender: UIBarButtonItem) {
-        rootViewController.present(
-            signupViewController,
-            animated: true,
-            completion: nil
-        )
+        show(.settings)
     }
     
     @objc private func handleShowProfile(sender: UIBarButtonItem) {
@@ -168,7 +155,11 @@ class MainCoordinator {
     public func show(_ destination: Destination = .root) {
         switch destination {
         case .profile:
-            homeViewController.navigationController?.pushViewController(profileViewController, animated: true)
+            rootNavigationController.pushViewController(profileViewController, animated: true)
+        case .settings:
+            rootNavigationController.pushViewController(settingsViewController, animated: true)
+        case .notifications:
+            rootNavigationController.pushViewController(notificationFeedViewController, animated: true)
         default:
             break
         }
@@ -178,7 +169,7 @@ class MainCoordinator {
     
     init(window: UIWindow?) {
         self.window = window
-        self.window?.rootViewController = rootViewController
+        self.window?.rootViewController = rootNavigationController
     }
 }
 

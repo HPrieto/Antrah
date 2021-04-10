@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4333332D26221ECF00107A46 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333332C26221ECF00107A46 /* SettingsViewController.swift */; };
+		43333332262220A200107A46 /* ButtonTableViewHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43333331262220A200107A46 /* ButtonTableViewHeaderFooter.swift */; };
+		4333333A262222C800107A46 /* UITableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43333339262222C800107A46 /* UITableViewHeaderFooterView.swift */; };
+		433333402622275200107A46 /* DeviceInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333333F2622275200107A46 /* DeviceInformation.swift */; };
+		433333452622275E00107A46 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433333442622275E00107A46 /* AppContext.swift */; };
+		4333334A2622297B00107A46 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433333492622297B00107A46 /* UIBarButtonItem+Extensions.swift */; };
+		4333334F26222A5D00107A46 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333334E26222A5D00107A46 /* UIImage+Extensions.swift */; };
 		43B278D926190E60006470AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278D826190E60006470AB /* AppDelegate.swift */; };
 		43B278DB26190E60006470AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278DA26190E60006470AB /* SceneDelegate.swift */; };
 		43B278DD26190E60006470AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278DC26190E60006470AB /* ViewController.swift */; };
@@ -58,6 +65,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4333332C26221ECF00107A46 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		43333331262220A200107A46 /* ButtonTableViewHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewHeaderFooter.swift; sourceTree = "<group>"; };
+		43333339262222C800107A46 /* UITableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		4333333F2622275200107A46 /* DeviceInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInformation.swift; sourceTree = "<group>"; };
+		433333442622275E00107A46 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		433333492622297B00107A46 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		4333334E26222A5D00107A46 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		43B278D526190E60006470AB /* Antrah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antrah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B278D826190E60006470AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43B278DA26190E60006470AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +136,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4333333E2622274200107A46 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4333333F2622275200107A46 /* DeviceInformation.swift */,
+				433333442622275E00107A46 /* AppContext.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		43B278CC26190E60006470AB = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +202,7 @@
 		43B2790F26190EB3006470AB /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4333333E2622274200107A46 /* Util */,
 				43EA8B16261A7DE700CC2626 /* Models */,
 				43B2792D26192E1E006470AB /* Views */,
 				43B2792226192775006470AB /* ViewControllers */,
@@ -206,6 +230,9 @@
 				43EA8B30261A859A00CC2626 /* UITableViewCell+Extensions.swift */,
 				43EA8B47261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift */,
 				43EA8B54261AD7B600CC2626 /* NSAttributedString+Extensions.swift */,
+				43333339262222C800107A46 /* UITableViewHeaderFooterView.swift */,
+				433333492622297B00107A46 /* UIBarButtonItem+Extensions.swift */,
+				4333334E26222A5D00107A46 /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -218,6 +245,7 @@
 				43EA8B3D261ACAEC00CC2626 /* NotificationFeedViewController.swift */,
 				43EA8B59261C1CA400CC2626 /* SignupViewController.swift */,
 				43EA8B5E261C1FF700CC2626 /* ProfileViewController.swift */,
+				4333332C26221ECF00107A46 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -229,6 +257,7 @@
 				43EA8B0C2619713D00CC2626 /* BorderView.swift */,
 				43EA8B35261A85F000CC2626 /* QuestionFeedTableViewCell.swift */,
 				43EA8B42261ACCE700CC2626 /* NotificationFeedTableViewCell.swift */,
+				43333331262220A200107A46 /* ButtonTableViewHeaderFooter.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -379,28 +408,35 @@
 				43EA8B55261AD7B600CC2626 /* NSAttributedString+Extensions.swift in Sources */,
 				43EA8B1D261A7E7300CC2626 /* QuestionTag.swift in Sources */,
 				43B278DD26190E60006470AB /* ViewController.swift in Sources */,
+				433333452622275E00107A46 /* AppContext.swift in Sources */,
 				43EA8B2C261A802100CC2626 /* Answer.swift in Sources */,
 				43B278E326190E60006470AB /* Antrah.xcdatamodeld in Sources */,
 				43EA8B22261A7F8300CC2626 /* User.swift in Sources */,
+				4333334A2622297B00107A46 /* UIBarButtonItem+Extensions.swift in Sources */,
 				43B278D926190E60006470AB /* AppDelegate.swift in Sources */,
 				43EA8B0D2619713D00CC2626 /* BorderView.swift in Sources */,
 				43EA8B18261A7DF300CC2626 /* Question.swift in Sources */,
 				43EA8B5F261C1FF700CC2626 /* ProfileViewController.swift in Sources */,
 				43EA8B31261A859A00CC2626 /* UITableViewCell+Extensions.swift in Sources */,
 				43B279292619286E006470AB /* UIColor+Extensions.swift in Sources */,
+				4333334F26222A5D00107A46 /* UIImage+Extensions.swift in Sources */,
 				43B2791226190ECB006470AB /* MainCoordinator.swift in Sources */,
+				4333333A262222C800107A46 /* UITableViewHeaderFooterView.swift in Sources */,
 				43B2792426192797006470AB /* AskQuestionViewController.swift in Sources */,
+				433333402622275200107A46 /* DeviceInformation.swift in Sources */,
 				43EA8B27261A7FDD00CC2626 /* Vote.swift in Sources */,
 				43B2791B26192726006470AB /* UIFont+Extensions.swift in Sources */,
 				43EA8B3E261ACAEC00CC2626 /* NotificationFeedViewController.swift in Sources */,
 				43EA8B48261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift in Sources */,
 				43B2793726192F1D006470AB /* UIStackView+Extensions.swift in Sources */,
+				43333332262220A200107A46 /* ButtonTableViewHeaderFooter.swift in Sources */,
 				43B2792F26192E49006470AB /* VerticalScrollStackView.swift in Sources */,
 				43EA8B36261A85F000CC2626 /* QuestionFeedTableViewCell.swift in Sources */,
 				43B278DB26190E60006470AB /* SceneDelegate.swift in Sources */,
 				43EA8B5A261C1CA400CC2626 /* SignupViewController.swift in Sources */,
 				43EA8B43261ACCE700CC2626 /* NotificationFeedTableViewCell.swift in Sources */,
 				43EA8B12261A7D3700CC2626 /* QuestionFeedViewController.swift in Sources */,
+				4333332D26221ECF00107A46 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

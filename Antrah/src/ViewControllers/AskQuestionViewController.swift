@@ -46,9 +46,10 @@ class AskQuestionViewController: UIViewController {
     
     // MARK: - Subviews
     
-    private(set) lazy var leftBarButtonItem: UIBarButtonItem? = { [unowned self] in
+    private(set) lazy var closeBarButtonItem: UIBarButtonItem? = { [unowned self] in
         UIBarButtonItem(
-            barButtonSystemItem: .close,
+            systemName: "xmark",
+            weight: .medium,
             target: self,
             action: #selector(handleClose(sender:))
         )
@@ -192,7 +193,7 @@ class AskQuestionViewController: UIViewController {
         let keyboardHeight: CGFloat = keyboardRectangle.height
         
         DispatchQueue.main.async {
-            self.submitButtonBottomConstant = -(keyboardHeight)
+            self.submitButtonBottomConstant = keyboardHeight.negative
             UIView.animate(withDuration: 0.2) {
                 self.view.layoutIfNeeded()
             }
@@ -201,7 +202,7 @@ class AskQuestionViewController: UIViewController {
     
     @objc private func handleKeyboardWillHide(notification: Notification) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            self.submitButtonBottomConstant = -self.submitButtonBottomConstantMin
+            self.submitButtonBottomConstant = self.submitButtonBottomConstantMin.negative
             UIView.animate(withDuration: 0.2) {
                 self.view.layoutIfNeeded()
             }
@@ -221,7 +222,7 @@ class AskQuestionViewController: UIViewController {
     private func setup() {
         view.backgroundColor = .white
         
-        navigationItem.leftBarButtonItem = leftBarButtonItem
+        navigationItem.rightBarButtonItem = closeBarButtonItem
         
         view.addSubview(stackView)
         view.addSubview(submitButton)

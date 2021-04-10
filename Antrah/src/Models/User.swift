@@ -15,6 +15,7 @@ struct User: Identifiable {
     public var lastName: String
     public var businessName: String
     public var phone: String
+    public var bio: String
     public var createTime: Date
     public var imageUrl: String?
 }

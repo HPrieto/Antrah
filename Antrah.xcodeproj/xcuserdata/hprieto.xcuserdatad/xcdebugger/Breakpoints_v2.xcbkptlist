@@ -68,5 +68,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16C94286-FC1D-4FD3-83AB-7EFC4E28DFE2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Antrah/src/Coordinators/MainCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "show(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7EF4015-2AC5-4E61-8CB7-0EF36D1ED84F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Antrah/src/Coordinators/MainCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "show(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D7EF4015-2AC5-4E61-8CB7-0EF36D1ED84F - 6092aef477f0987d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of Antrah.MainCoordinator.show(Antrah.MainCoordinator.Destination) -&gt; ()"
+                  moduleName = "Antrah"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hprieto/Dev/Antrah/Antrah/src/Coordinators/MainCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "6">
+               </Location>
+               <Location
+                  uuid = "D7EF4015-2AC5-4E61-8CB7-0EF36D1ED84F - 251422a9bb36aeb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Antrah.MainCoordinator.show(Antrah.MainCoordinator.Destination) -&gt; ()"
+                  moduleName = "Antrah"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hprieto/Dev/Antrah/Antrah/src/Coordinators/MainCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
