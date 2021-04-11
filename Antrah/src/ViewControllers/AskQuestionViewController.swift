@@ -30,6 +30,9 @@ class AskQuestionViewController: UIViewController {
         case body = "Body"
         case bodyDescription = "Include all the information someone would need to answer your question"
         case submitButtonTitle = "Submit Question"
+        case tags = "Tags"
+        case tagsDescription = "Add up to 5 tags to describe what your question is about."
+        case tagsTextFieldPlaceholder = "e.g. (licensing marketing retail)"
     }
     
     // MARK: - Private Properties
@@ -88,7 +91,12 @@ class AskQuestionViewController: UIViewController {
             bodyLabel,
             bodyDescriptionLabel,
             VerticalScrollStackView.PaddingView(.spacingMacro16px),
-            bodyTextView
+            bodyTextView,
+            VerticalScrollStackView.PaddingView(.spacingMacro16px),
+            tagsLabel,
+            tagsDescriptionLabel,
+            VerticalScrollStackView.PaddingView(.spacingMacro16px),
+            tagsTextField
         ])
         return view
     }()
@@ -185,7 +193,63 @@ class AskQuestionViewController: UIViewController {
         return view
     }()
     
+    private(set) lazy var tagsLabel: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .clear
+        label.font = .demiBold(ofSize: .titleSmall22px)
+        label.textColor = .darkerGray
+        label.text = Strings.tags.rawValue
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private(set) lazy var tagsDescriptionLabel: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .clear
+        label.font = .regular(ofSize: .fontMedium14px)
+        label.textColor = .darkGray
+        label.text = Strings.tagsDescription.rawValue
+        label.numberOfLines = 3
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private(set) lazy var tagsTextField: UITextField = { [unowned self] in
+        let view = UITextField()
+        view.font = .regular(ofSize: .fontLarge16px)
+        view.textColor = .darkerGray
+        view.placeholder = Strings.tagsTextFieldPlaceholder.rawValue
+        view.autocorrectionType = .no
+        view.layer.masksToBounds = true
+        view.layer.borderWidth = 1
+        view.layer.cornerRadius = .cornerRadiusSmall8px
+        view.layer.borderColor = UIColor.primaryBorder.cgColor
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.sublayerTransform = CATransform3DMakeTranslation(.spacingMicro8px/2, 0, 0);
+        view.heightAnchor.constraint(equalToConstant: .spacingMacro40px).isActive = true
+        view.addTarget(
+            self,
+            action: #selector(handleEditingChanged(sender:)),
+            for: .editingChanged
+        )
+        return view
+    }()
+    
     // MARK: - Handlers
+    
+    @objc private func handleEditingChanged(sender: UITextField) {
+        guard
+            let input: String = sender.text,
+            input.trimmingCharacters(in: .whitespaces).count > 0,
+            let lastCharacter: Character = input.last,
+            lastCharacter.isWhitespace
+        else {
+            return
+        }
+        let newTag: String = input.trimmingCharacters(in: .whitespaces).lowercased()
+        sender.text = ""
+        print("New tag:", newTag)
+    }
     
     @objc private func handleClose(sender: UIBarButtonItem) {
         dismiss(animated: true, completion: { [unowned self] in
@@ -236,6 +300,7 @@ class AskQuestionViewController: UIViewController {
     public func reset() {
         titleTextField.text = ""
         bodyTextView.text = ""
+        tagsTextField.text = ""
         stackView.scrollToTop(animated: false)
     }
     
@@ -269,8 +334,8 @@ class AskQuestionViewController: UIViewController {
         setup()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         NotificationCenter.default.addObserver(
             self,
@@ -285,6 +350,10 @@ class AskQuestionViewController: UIViewController {
             name: UIResponder.keyboardWillHideNotification,
             object: nil
         )
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         titleTextField.becomeFirstResponder()
     }
@@ -294,5 +363,15 @@ class AskQuestionViewController: UIViewController {
         reset()
         
         NotificationCenter.default.removeObserver(self)
+    }
+}
+
+// MARK: - UITextFieldDelegate
+
+extension AskQuestionViewController: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("textfield: ", textField.text ?? "")
+        return true
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05D26166A8E7B87F420E6E3F /* Pods_Antrah_AntrahUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008ED32FF1EE4C2B07B4419B /* Pods_Antrah_AntrahUITests.framework */; };
 		4333332D26221ECF00107A46 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333332C26221ECF00107A46 /* SettingsViewController.swift */; };
 		43333332262220A200107A46 /* ButtonTableViewHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43333331262220A200107A46 /* ButtonTableViewHeaderFooter.swift */; };
 		4333333A262222C800107A46 /* UITableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43333339262222C800107A46 /* UITableViewHeaderFooterView.swift */; };
@@ -18,10 +19,9 @@
 		4333335926229DA300107A46 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333335826229DA300107A46 /* NavigationController.swift */; };
 		4333335E262375D400107A46 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333335D262375D400107A46 /* HomeViewController.swift */; };
 		433333632623826C00107A46 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433333622623826C00107A46 /* String+Extensions.swift */; };
+		433333772623A0D700107A46 /* Character+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433333762623A0D700107A46 /* Character+Extensions.swift */; };
 		43B278D926190E60006470AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278D826190E60006470AB /* AppDelegate.swift */; };
 		43B278DB26190E60006470AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278DA26190E60006470AB /* SceneDelegate.swift */; };
-		43B278DD26190E60006470AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278DC26190E60006470AB /* ViewController.swift */; };
-		43B278E026190E60006470AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B278DE26190E60006470AB /* Main.storyboard */; };
 		43B278E326190E60006470AB /* Antrah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43B278E126190E60006470AB /* Antrah.xcdatamodeld */; };
 		43B278E526190E61006470AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B278E426190E61006470AB /* Assets.xcassets */; };
 		43B278E826190E61006470AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B278E626190E61006470AB /* LaunchScreen.storyboard */; };
@@ -49,6 +49,8 @@
 		43EA8B55261AD7B600CC2626 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B54261AD7B600CC2626 /* NSAttributedString+Extensions.swift */; };
 		43EA8B5A261C1CA400CC2626 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B59261C1CA400CC2626 /* SignupViewController.swift */; };
 		43EA8B5F261C1FF700CC2626 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA8B5E261C1FF700CC2626 /* ProfileViewController.swift */; };
+		D766E2B4AE31BC8EEAFA7CC4 /* Pods_Antrah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6BD56A51CE631F92E447AE /* Pods_Antrah.framework */; };
+		FEEDCF13330E2429427ACE91 /* Pods_AntrahTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3645B1AA3C9AB08F4247016 /* Pods_AntrahTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008ED32FF1EE4C2B07B4419B /* Pods_Antrah_AntrahUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Antrah_AntrahUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC3D391D6B4469F0990326F /* Pods-Antrah-AntrahUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antrah-AntrahUITests.debug.xcconfig"; path = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2111927E30427CC9AE21A582 /* Pods-AntrahTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntrahTests.debug.xcconfig"; path = "Target Support Files/Pods-AntrahTests/Pods-AntrahTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4333332C26221ECF00107A46 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		43333331262220A200107A46 /* ButtonTableViewHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewHeaderFooter.swift; sourceTree = "<group>"; };
 		43333339262222C800107A46 /* UITableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewHeaderFooterView.swift; sourceTree = "<group>"; };
@@ -80,11 +85,10 @@
 		4333335826229DA300107A46 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		4333335D262375D400107A46 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		433333622623826C00107A46 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		433333762623A0D700107A46 /* Character+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Extensions.swift"; sourceTree = "<group>"; };
 		43B278D526190E60006470AB /* Antrah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antrah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B278D826190E60006470AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43B278DA26190E60006470AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43B278DC26190E60006470AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		43B278DF26190E60006470AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43B278E226190E60006470AB /* Antrah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Antrah.xcdatamodel; sourceTree = "<group>"; };
 		43B278E426190E61006470AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43B278E726190E61006470AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,6 +121,12 @@
 		43EA8B54261AD7B600CC2626 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 		43EA8B59261C1CA400CC2626 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		43EA8B5E261C1FF700CC2626 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		565CA5558D50763FBBE5A11B /* Pods-AntrahTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntrahTests.release.xcconfig"; path = "Target Support Files/Pods-AntrahTests/Pods-AntrahTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D6BD56A51CE631F92E447AE /* Pods_Antrah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Antrah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99E617A5AC9EAE8EFEF3ADF8 /* Pods-Antrah-AntrahUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antrah-AntrahUITests.release.xcconfig"; path = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3645B1AA3C9AB08F4247016 /* Pods_AntrahTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntrahTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E302507A49C7887ABD019FE2 /* Pods-Antrah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antrah.debug.xcconfig"; path = "Target Support Files/Pods-Antrah/Pods-Antrah.debug.xcconfig"; sourceTree = "<group>"; };
+		F5F1C7AD79797ACC7F36F0DF /* Pods-Antrah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antrah.release.xcconfig"; path = "Target Support Files/Pods-Antrah/Pods-Antrah.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D766E2B4AE31BC8EEAFA7CC4 /* Pods_Antrah.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEDCF13330E2429427ACE91 /* Pods_AntrahTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D26166A8E7B87F420E6E3F /* Pods_Antrah_AntrahUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +173,8 @@
 				43B278F126190E61006470AB /* AntrahTests */,
 				43B278FC26190E61006470AB /* AntrahUITests */,
 				43B278D626190E60006470AB /* Products */,
+				96FFCA833F1C971AE0184EE5 /* Pods */,
+				5331A3D60493B0FB53447F0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,8 +194,6 @@
 				43B2790F26190EB3006470AB /* src */,
 				43B278D826190E60006470AB /* AppDelegate.swift */,
 				43B278DA26190E60006470AB /* SceneDelegate.swift */,
-				43B278DC26190E60006470AB /* ViewController.swift */,
-				43B278DE26190E60006470AB /* Main.storyboard */,
 				43B278E426190E61006470AB /* Assets.xcassets */,
 				43B278E626190E61006470AB /* LaunchScreen.storyboard */,
 				43B278E926190E61006470AB /* Info.plist */,
@@ -243,6 +256,7 @@
 				4333334E26222A5D00107A46 /* UIImage+Extensions.swift */,
 				43333353262290AF00107A46 /* UIView+Extensions.swift */,
 				433333622623826C00107A46 /* String+Extensions.swift */,
+				433333762623A0D700107A46 /* Character+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -286,6 +300,29 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		5331A3D60493B0FB53447F0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D6BD56A51CE631F92E447AE /* Pods_Antrah.framework */,
+				008ED32FF1EE4C2B07B4419B /* Pods_Antrah_AntrahUITests.framework */,
+				B3645B1AA3C9AB08F4247016 /* Pods_AntrahTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96FFCA833F1C971AE0184EE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E302507A49C7887ABD019FE2 /* Pods-Antrah.debug.xcconfig */,
+				F5F1C7AD79797ACC7F36F0DF /* Pods-Antrah.release.xcconfig */,
+				1FC3D391D6B4469F0990326F /* Pods-Antrah-AntrahUITests.debug.xcconfig */,
+				99E617A5AC9EAE8EFEF3ADF8 /* Pods-Antrah-AntrahUITests.release.xcconfig */,
+				2111927E30427CC9AE21A582 /* Pods-AntrahTests.debug.xcconfig */,
+				565CA5558D50763FBBE5A11B /* Pods-AntrahTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,6 +330,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43B2790226190E61006470AB /* Build configuration list for PBXNativeTarget "Antrah" */;
 			buildPhases = (
+				78CC6B6A9AA11ABCB0D81545 /* [CP] Check Pods Manifest.lock */,
 				43B278D126190E60006470AB /* Sources */,
 				43B278D226190E60006470AB /* Frameworks */,
 				43B278D326190E60006470AB /* Resources */,
@@ -310,6 +348,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43B2790526190E61006470AB /* Build configuration list for PBXNativeTarget "AntrahTests" */;
 			buildPhases = (
+				93566B3D647F07AC64F57981 /* [CP] Check Pods Manifest.lock */,
 				43B278EA26190E61006470AB /* Sources */,
 				43B278EB26190E61006470AB /* Frameworks */,
 				43B278EC26190E61006470AB /* Resources */,
@@ -328,6 +367,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43B2790826190E61006470AB /* Build configuration list for PBXNativeTarget "AntrahUITests" */;
 			buildPhases = (
+				6C34F24CAB445BF5416BCBB3 /* [CP] Check Pods Manifest.lock */,
 				43B278F526190E61006470AB /* Sources */,
 				43B278F626190E61006470AB /* Frameworks */,
 				43B278F726190E61006470AB /* Resources */,
@@ -391,7 +431,6 @@
 			files = (
 				43B278E826190E61006470AB /* LaunchScreen.storyboard in Resources */,
 				43B278E526190E61006470AB /* Assets.xcassets in Resources */,
-				43B278E026190E60006470AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +450,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C34F24CAB445BF5416BCBB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Antrah-AntrahUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78CC6B6A9AA11ABCB0D81545 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Antrah-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93566B3D647F07AC64F57981 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AntrahTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43B278D126190E60006470AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -418,8 +526,8 @@
 			files = (
 				43EA8B082619662900CC2626 /* CGFloat+Extensions.swift in Sources */,
 				43EA8B55261AD7B600CC2626 /* NSAttributedString+Extensions.swift in Sources */,
+				433333772623A0D700107A46 /* Character+Extensions.swift in Sources */,
 				43EA8B1D261A7E7300CC2626 /* QuestionTag.swift in Sources */,
-				43B278DD26190E60006470AB /* ViewController.swift in Sources */,
 				433333452622275E00107A46 /* AppContext.swift in Sources */,
 				43EA8B2C261A802100CC2626 /* Answer.swift in Sources */,
 				43333354262290AF00107A46 /* UIView+Extensions.swift in Sources */,
@@ -488,14 +596,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		43B278DE26190E60006470AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43B278DF26190E60006470AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		43B278E626190E61006470AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -625,6 +725,7 @@
 		};
 		43B2790326190E61006470AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E302507A49C7887ABD019FE2 /* Pods-Antrah.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -644,6 +745,7 @@
 		};
 		43B2790426190E61006470AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5F1C7AD79797ACC7F36F0DF /* Pods-Antrah.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -663,6 +765,7 @@
 		};
 		43B2790626190E61006470AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2111927E30427CC9AE21A582 /* Pods-AntrahTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -685,6 +788,7 @@
 		};
 		43B2790726190E61006470AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565CA5558D50763FBBE5A11B /* Pods-AntrahTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -707,6 +811,7 @@
 		};
 		43B2790926190E61006470AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC3D391D6B4469F0990326F /* Pods-Antrah-AntrahUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -727,6 +832,7 @@
 		};
 		43B2790A26190E61006470AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E617A5AC9EAE8EFEF3ADF8 /* Pods-Antrah-AntrahUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
