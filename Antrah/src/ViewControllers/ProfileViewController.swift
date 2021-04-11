@@ -98,6 +98,8 @@ class ProfileViewController: UIViewController {
     private func setup() {
         view.backgroundColor = .white
         
+        navigationItem.title = "Profile"
+        
         view.addSubview(profileImageView)
         view.addSubview(nameLabel)
         view.addSubview(businessLabel)

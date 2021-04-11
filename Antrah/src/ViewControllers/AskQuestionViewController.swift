@@ -17,6 +17,13 @@ protocol AskQuestionViewControllerDelegate {
 
 class AskQuestionViewController: UIViewController {
     
+    enum State {
+        case normal
+        case invalidTitle(errorMessage: String)
+        case invalidBody(errorMessage: String)
+        case valid
+    }
+    
     enum Strings: String {
         case title = "Title"
         case titleDescription = "Be specific and imagine you're asking a question to another person."
@@ -43,6 +50,21 @@ class AskQuestionViewController: UIViewController {
     // MARK: - Public Properties
     
     public var askQuestionDelegate: AskQuestionViewControllerDelegate?
+    
+    public var state: AskQuestionViewController.State = .normal {
+        didSet {
+            switch state {
+            case .normal:
+                submitButton.isEnabled = false
+            case .invalidTitle(let errorMessage):
+                print(errorMessage)
+            case .invalidBody(let errorMessage):
+                print(errorMessage)
+            case .valid:
+                submitButton.isEnabled = true
+            }
+        }
+    }
     
     // MARK: - Subviews
     
@@ -74,7 +96,7 @@ class AskQuestionViewController: UIViewController {
     private(set) lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.backgroundColor = .clear
-        label.font = .bold(ofSize: .titleSmall22px)
+        label.font = .demiBold(ofSize: .titleSmall22px)
         label.textColor = .darkerGray
         label.text = Strings.title.rawValue
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -110,7 +132,7 @@ class AskQuestionViewController: UIViewController {
     private(set) lazy var bodyLabel: UILabel = {
         let label = UILabel()
         label.backgroundColor = .clear
-        label.font = .bold(ofSize: .titleSmall22px)
+        label.font = .demiBold(ofSize: .titleSmall22px)
         label.textColor = .darkerGray
         label.text = Strings.body.rawValue
         label.numberOfLines = 3
@@ -222,6 +244,7 @@ class AskQuestionViewController: UIViewController {
     private func setup() {
         view.backgroundColor = .white
         
+        navigationItem.title = "Ask a Question"
         navigationItem.rightBarButtonItem = closeBarButtonItem
         
         view.addSubview(stackView)

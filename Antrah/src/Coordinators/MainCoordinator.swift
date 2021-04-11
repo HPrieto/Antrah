@@ -75,11 +75,11 @@ class MainCoordinator {
     
     private(set) lazy var signupViewController: UIViewController = { [unowned self] in
         let controller = SignupViewController()
-        return UINavigationController(rootViewController: controller)
+        return NavigationController(rootViewController: controller)
     }()
     
     private(set) lazy var rootNavigationController: UINavigationController = {
-        UINavigationController(rootViewController: questionFeedViewController)
+        NavigationController(rootViewController: questionFeedViewController)
     }()
     
     private(set) lazy var questionFeedViewController: UIViewController = { [unowned self] in
@@ -112,7 +112,7 @@ class MainCoordinator {
     private(set) lazy var askQuestionViewController: UIViewController = { [unowned self] in
         let controller = AskQuestionViewController()
         controller.askQuestionDelegate = self
-        return UINavigationController(rootViewController: controller)
+        return NavigationController(rootViewController: controller)
     }()
     
     private(set) lazy var profileViewController: UIViewController = { [unowned self] in

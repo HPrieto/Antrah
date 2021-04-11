@@ -17,11 +17,12 @@ protocol QuestionFeedViewControllerDelegate {
 class QuestionFeedViewController: UIViewController {
     
     enum Strings: String {
-        case askQuestionButtonTitle = "Ask Question"
+        case askQuestionButtonTitle = "Ask a Question"
     }
     
     enum Dimensions: CGFloat {
         case askButtonHeight = 40
+        case askButtonWidth = 140
     }
     
     // MARK: - Public Properties
@@ -58,7 +59,7 @@ class QuestionFeedViewController: UIViewController {
     
     private(set) lazy var askQuestionButton: UIButton = { [unowned self] in
         let view = UIButton()
-        view.backgroundColor = .blue
+        view.backgroundColor = .green
         view.titleLabel?.font = .demiBold(ofSize: .fontMedium14px)
         view.setTitleColor(.white, for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -97,7 +98,7 @@ class QuestionFeedViewController: UIViewController {
         askQuestionButton.heightAnchor.constraint(equalToConstant: Dimensions.askButtonHeight.rawValue).isActive = true
         askQuestionButton.layer.masksToBounds = true
         askQuestionButton.layer.cornerRadius = Dimensions.askButtonHeight.rawValue / 2
-        askQuestionButton.widthAnchor.constraint(equalToConstant: 160).isActive = true
+        askQuestionButton.widthAnchor.constraint(equalToConstant: Dimensions.askButtonWidth.rawValue).isActive = true
     }
     
     // MARK: - Life Cycle
