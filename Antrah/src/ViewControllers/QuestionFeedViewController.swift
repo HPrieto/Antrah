@@ -7,7 +7,26 @@
 
 import UIKit
 
+// MARK: - QuestionFeedViewControllerDelegate
+
+protocol QuestionFeedViewControllerDelegate {
+    func questionFeedViewController(_ controller: QuestionFeedViewController, didSelectRowAt indexPath: IndexPath)
+    func questionFeedViewController(_ controller: QuestionFeedViewController, askQuestionButtonTapped button: UIButton)
+}
+
 class QuestionFeedViewController: UIViewController {
+    
+    enum Strings: String {
+        case askQuestionButtonTitle = "Ask Question"
+    }
+    
+    enum Dimensions: CGFloat {
+        case askButtonHeight = 40
+    }
+    
+    // MARK: - Public Properties
+    
+    var questionFeedDelegate: QuestionFeedViewControllerDelegate?
     
     let viewModel: QuestionFeedViewModel
     
@@ -28,8 +47,36 @@ class QuestionFeedViewController: UIViewController {
         view.separatorStyle = .none
         view.register(QuestionFeedTableViewCell.self, forCellReuseIdentifier: QuestionFeedTableViewCell.reuseIdentifier)
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.contentInset = UIEdgeInsets(
+            top: 0,
+            left: 0,
+            bottom: 80,
+            right: 0
+        )
         return view
     }()
+    
+    private(set) lazy var askQuestionButton: UIButton = { [unowned self] in
+        let view = UIButton()
+        view.backgroundColor = .blue
+        view.titleLabel?.font = .demiBold(ofSize: .fontMedium14px)
+        view.setTitleColor(.white, for: .normal)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.addTarget(
+            self,
+            action: #selector(handleAskQuestion(sender:)),
+            for: .touchUpInside
+        )
+        view.setTitle(Strings.askQuestionButtonTitle.rawValue, for: .normal)
+        view.addShadow()
+        return view
+    }()
+    
+    // MARK: - Handlers
+    
+    @objc private func handleAskQuestion(sender: UIButton) {
+        questionFeedDelegate?.questionFeedViewController(self, askQuestionButtonTapped: sender)
+    }
     
     // MARK: - Setup
     
@@ -38,11 +85,19 @@ class QuestionFeedViewController: UIViewController {
         navigationItem.titleView = searchBar
         
         view.addSubview(tableView)
+        view.addSubview(askQuestionButton)
         
         tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        askQuestionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: CGFloat.spacingMacro24px.negative).isActive = true
+        askQuestionButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        askQuestionButton.heightAnchor.constraint(equalToConstant: Dimensions.askButtonHeight.rawValue).isActive = true
+        askQuestionButton.layer.masksToBounds = true
+        askQuestionButton.layer.cornerRadius = Dimensions.askButtonHeight.rawValue / 2
+        askQuestionButton.widthAnchor.constraint(equalToConstant: 160).isActive = true
     }
     
     // MARK: - Life Cycle
@@ -99,6 +154,10 @@ extension QuestionFeedViewController: UITableViewDelegate, UITableViewDataSource
         cell.likeCountLabel.text = "125"
         cell.replyCountLabel.text = "52"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        questionFeedDelegate?.questionFeedViewController(self, didSelectRowAt: indexPath)
     }
 }
 

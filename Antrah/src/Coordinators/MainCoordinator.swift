@@ -63,6 +63,8 @@ class MainCoordinator {
         case profile
         case settings
         case notifications
+        case askQuestion
+        case logout
     }
     
     // MARK: - Private Properties
@@ -92,18 +94,13 @@ class MainCoordinator {
                 action: #selector(handleShowSettings(sender:))
             ),
             UIBarButtonItem(
-                systemName: "square.and.pencil",
-                weight: .medium,
-                target: self,
-                action: #selector(handleAsk(sender:))
-            ),
-            UIBarButtonItem(
                 systemName: "bell",
                 weight: .medium,
                 target: self,
                 action: #selector(handleNotifications(sender:))
             )
         ]
+        controller.questionFeedDelegate = self
         return controller
     }()
     
@@ -120,11 +117,18 @@ class MainCoordinator {
     
     private(set) lazy var profileViewController: UIViewController = { [unowned self] in
         let controller = ProfileViewController()
+        controller.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            systemName: "chevron.left",
+            weight: .medium,
+            target: self,
+            action: #selector(handleGoBack(sender:))
+        )
         return controller
     }()
     
-    private(set) lazy var settingsViewController: UIViewController = {
+    private(set) lazy var settingsViewController: UIViewController = { [unowned self] in
         let controller = SettingsViewController()
+        controller.settingsDelegate = self
         return controller
     }()
     
@@ -150,6 +154,10 @@ class MainCoordinator {
         show(.profile)
     }
     
+    @objc private func handleGoBack(sender: UIBarButtonItem) {
+        rootNavigationController.popViewController(animated: true)
+    }
+    
     // MARK: - Public Methods
     
     public func show(_ destination: Destination = .root) {
@@ -160,6 +168,19 @@ class MainCoordinator {
             rootNavigationController.pushViewController(settingsViewController, animated: true)
         case .notifications:
             rootNavigationController.pushViewController(notificationFeedViewController, animated: true)
+        case .askQuestion:
+            rootNavigationController.present(
+                askQuestionViewController,
+                animated: true,
+                completion: nil
+            )
+        case .logout:
+            signupViewController.modalPresentationStyle = .fullScreen
+            rootNavigationController.present(
+                signupViewController,
+                animated: true,
+                completion: nil
+            )
         default:
             break
         }
@@ -180,5 +201,39 @@ extension MainCoordinator: AskQuestionViewControllerDelegate {
     func askQuestionViewController(_ controller: AskQuestionViewController, title: String?, body: String) {
         print("Title: \(title ?? "")")
         print("Body: \(body)")
+    }
+}
+
+// MARK: - QuestionFeedViewControllerDelegate
+
+extension MainCoordinator: QuestionFeedViewControllerDelegate {
+    func questionFeedViewController(_ controller: QuestionFeedViewController, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func questionFeedViewController(_ controller: QuestionFeedViewController, askQuestionButtonTapped button: UIButton) {
+        show(.askQuestion)
+    }
+}
+
+// MARK: - SettingsViewControllerDelegate
+
+extension MainCoordinator: SettingsViewControllerDelegate {
+    
+    func settingsViewController(_ controller: SettingsViewController, logoutButtonTapped button: UIButton) {
+        show(.logout)
+    }
+    
+    func settingsViewController(_ controller: SettingsViewController, didSelectRowAt indexPath: IndexPath, setting: SettingsViewModel.Setting?) {
+        guard let setting: SettingsViewModel.Setting = setting else {
+            return
+        }
+        
+        switch setting {
+        case .profile:
+            show(.profile)
+        default:
+            break
+        }
     }
 }

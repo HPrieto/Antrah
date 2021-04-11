@@ -59,11 +59,12 @@ class ButtonTableViewHeaderFooter: UITableViewHeaderFooterView {
         addSubview(button)
         addSubview(label)
         
-        button.topAnchor.constraint(equalTo: topAnchor, constant: .spacingMacro16px).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        button.topAnchor.constraint(equalTo: topAnchor, constant: .spacingMacro24px).isActive = true
         button.leftAnchor.constraint(equalTo: leftAnchor, constant: .spacingMacro16px).isActive = true
         button.rightAnchor.constraint(equalTo: rightAnchor, constant: CGFloat.spacingMacro16px.negative).isActive = true
         
-        label.topAnchor.constraint(equalTo: button.bottomAnchor, constant: .spacingMacro16px).isActive = true
+        label.topAnchor.constraint(equalTo: button.bottomAnchor, constant: .spacingMacro24px).isActive = true
         label.leftAnchor.constraint(equalTo: button.leftAnchor).isActive = true
         label.rightAnchor.constraint(equalTo: button.rightAnchor).isActive = true
         
