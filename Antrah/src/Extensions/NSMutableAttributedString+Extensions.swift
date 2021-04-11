@@ -11,7 +11,7 @@ extension NSMutableAttributedString {
     
     convenience init(string: String,
                      color: UIColor = .darkerGray,
-                     font: UIFont,
+                     font: UIFont? = UIFont.regular(ofSize: .fontMedium14px),
                      underlineStyle: NSUnderlineStyle? = nil,
                      underlineColor: UIColor = .black) {
         var attributes: [NSAttributedString.Key: Any] = [
@@ -26,6 +26,22 @@ extension NSMutableAttributedString {
             string: string,
             attributes: attributes)
         self.init(attributedString: attributedString)
+    }
+    
+    public func addFontAttribute(font: UIFont?) {
+        self.addAttribute(
+            NSAttributedString.Key.font,
+            value: font as Any,
+            range: NSRange(location: 0, length: self.length)
+        )
+    }
+    
+    public func addColorAttribute(color: UIColor) {
+        self.addAttribute(
+            NSAttributedString.Key.foregroundColor,
+            value: color as Any,
+            range: NSRange(location: 0, length: self.length)
+        )
     }
     
     public func append(attributedStrings: [NSAttributedString]) {

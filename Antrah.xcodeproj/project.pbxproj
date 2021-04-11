@@ -16,6 +16,8 @@
 		4333334F26222A5D00107A46 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333334E26222A5D00107A46 /* UIImage+Extensions.swift */; };
 		43333354262290AF00107A46 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43333353262290AF00107A46 /* UIView+Extensions.swift */; };
 		4333335926229DA300107A46 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333335826229DA300107A46 /* NavigationController.swift */; };
+		4333335E262375D400107A46 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333335D262375D400107A46 /* HomeViewController.swift */; };
+		433333632623826C00107A46 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433333622623826C00107A46 /* String+Extensions.swift */; };
 		43B278D926190E60006470AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278D826190E60006470AB /* AppDelegate.swift */; };
 		43B278DB26190E60006470AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278DA26190E60006470AB /* SceneDelegate.swift */; };
 		43B278DD26190E60006470AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278DC26190E60006470AB /* ViewController.swift */; };
@@ -76,6 +78,8 @@
 		4333334E26222A5D00107A46 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		43333353262290AF00107A46 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4333335826229DA300107A46 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		4333335D262375D400107A46 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		433333622623826C00107A46 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		43B278D526190E60006470AB /* Antrah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antrah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B278D826190E60006470AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43B278DA26190E60006470AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 				433333492622297B00107A46 /* UIBarButtonItem+Extensions.swift */,
 				4333334E26222A5D00107A46 /* UIImage+Extensions.swift */,
 				43333353262290AF00107A46 /* UIView+Extensions.swift */,
+				433333622623826C00107A46 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				43EA8B5E261C1FF700CC2626 /* ProfileViewController.swift */,
 				4333332C26221ECF00107A46 /* SettingsViewController.swift */,
 				4333335826229DA300107A46 /* NavigationController.swift */,
+				4333335D262375D400107A46 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -422,6 +428,7 @@
 				4333334A2622297B00107A46 /* UIBarButtonItem+Extensions.swift in Sources */,
 				43B278D926190E60006470AB /* AppDelegate.swift in Sources */,
 				43EA8B0D2619713D00CC2626 /* BorderView.swift in Sources */,
+				433333632623826C00107A46 /* String+Extensions.swift in Sources */,
 				4333335926229DA300107A46 /* NavigationController.swift in Sources */,
 				43EA8B18261A7DF300CC2626 /* Question.swift in Sources */,
 				43EA8B5F261C1FF700CC2626 /* ProfileViewController.swift in Sources */,
@@ -433,6 +440,7 @@
 				43B2792426192797006470AB /* AskQuestionViewController.swift in Sources */,
 				433333402622275200107A46 /* DeviceInformation.swift in Sources */,
 				43EA8B27261A7FDD00CC2626 /* Vote.swift in Sources */,
+				4333335E262375D400107A46 /* HomeViewController.swift in Sources */,
 				43B2791B26192726006470AB /* UIFont+Extensions.swift in Sources */,
 				43EA8B3E261ACAEC00CC2626 /* NotificationFeedViewController.swift in Sources */,
 				43EA8B48261AD70700CC2626 /* NSMutableAttributedString+Extensions.swift in Sources */,

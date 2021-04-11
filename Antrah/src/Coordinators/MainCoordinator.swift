@@ -65,22 +65,38 @@ class MainCoordinator {
         case notifications
         case askQuestion
         case logout
+        case signup
     }
     
     // MARK: - Private Properties
     
     private let window: UIWindow?
     
-    // MARK: - ViewControllers
-    
-    private(set) lazy var signupViewController: UIViewController = { [unowned self] in
-        let controller = SignupViewController()
-        return NavigationController(rootViewController: controller)
-    }()
+    // MARK: - NavigationControllers
     
     private(set) lazy var rootNavigationController: UINavigationController = {
         NavigationController(rootViewController: questionFeedViewController)
     }()
+    
+    private(set) lazy var authNavigationController: UINavigationController = {
+        let navController = NavigationController(rootViewController: homeViewController)
+        return navController
+    }()
+    
+    // MARK: - Auth ViewControllers
+    
+    private(set) lazy var signupViewController: UIViewController = { [unowned self] in
+        let controller = SignupViewController()
+        controller.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            systemName: "chevron.left",
+            weight: .medium,
+            target: self,
+            action: #selector(handleAuthGoBack(sender:))
+        )
+        return controller
+    }()
+    
+    // MARK: - ViewControllers
     
     private(set) lazy var questionFeedViewController: UIViewController = { [unowned self] in
         let controller = QuestionFeedViewController()
@@ -121,7 +137,7 @@ class MainCoordinator {
             systemName: "chevron.left",
             weight: .medium,
             target: self,
-            action: #selector(handleGoBack(sender:))
+            action: #selector(handleRootGoBack(sender:))
         )
         return controller
     }()
@@ -129,6 +145,12 @@ class MainCoordinator {
     private(set) lazy var settingsViewController: UIViewController = { [unowned self] in
         let controller = SettingsViewController()
         controller.settingsDelegate = self
+        return controller
+    }()
+    
+    private(set) lazy var homeViewController: UIViewController = { [unowned self] in
+        let controller = HomeViewController()
+        controller.homeDelegate = self
         return controller
     }()
     
@@ -154,8 +176,12 @@ class MainCoordinator {
         show(.profile)
     }
     
-    @objc private func handleGoBack(sender: UIBarButtonItem) {
+    @objc private func handleRootGoBack(sender: UIBarButtonItem) {
         rootNavigationController.popViewController(animated: true)
+    }
+    
+    @objc private func handleAuthGoBack(sender: UIBarButtonItem) {
+        authNavigationController.popViewController(animated: true)
     }
     
     // MARK: - Public Methods
@@ -175,12 +201,14 @@ class MainCoordinator {
                 completion: nil
             )
         case .logout:
-            signupViewController.modalPresentationStyle = .fullScreen
+            authNavigationController.modalPresentationStyle = .fullScreen
             rootNavigationController.present(
-                signupViewController,
+                authNavigationController,
                 animated: true,
                 completion: nil
             )
+        case .signup:
+            authNavigationController.pushViewController(signupViewController, animated: true)
         default:
             break
         }
@@ -235,5 +263,26 @@ extension MainCoordinator: SettingsViewControllerDelegate {
         default:
             break
         }
+    }
+}
+
+// MARK: - HomeViewControllerDelegate
+
+extension MainCoordinator: HomeViewControllerDelegate {
+    
+    func homeViewController(_ controller: HomeViewController, signupButtonTapped button: UIButton) {
+        show(.signup)
+    }
+    
+    func homeViewController(_ controller: HomeViewController, googleSignupButtonTapped button: UIButton) {
+        
+    }
+    
+    func homeViewController(_ controller: HomeViewController, termsOfServiceTapped textView: UITextView) {
+        print("Terms of Service Tapped")
+    }
+    
+    func homeViewController(_ controller: HomeViewController, privacyPolicyTapped textView: UITextView) {
+        print("Privacy Policy Tapped")
     }
 }

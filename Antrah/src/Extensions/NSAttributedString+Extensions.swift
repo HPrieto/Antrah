@@ -16,12 +16,12 @@ extension NSAttributedString {
     
     convenience init(string: String,
                      color: UIColor = .darkerGray,
-                     font: UIFont?) {
+                     font: UIFont? = UIFont.regular(ofSize: .fontMedium14px)) {
         let attributedString: NSAttributedString = NSAttributedString(
             string: string,
             attributes: [
                 .font: font as Any,
-                .foregroundColor: color
+                .foregroundColor: color as Any
             ])
         self.init(attributedString: attributedString)
     }

@@ -14,6 +14,7 @@ extension CGFloat {
     }
     
     // MARK: - CornerRadius
+    public static let cornerRadiusSuperTiny2px: CGFloat = 2
     public static let cornerRadiusTiny4px: CGFloat = 4
     public static let cornerRadiusSmall8px: CGFloat = 8
     public static let cornerRadiusMedium12px: CGFloat = 12
