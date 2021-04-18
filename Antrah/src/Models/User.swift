@@ -13,7 +13,7 @@ struct User: Identifiable {
     public var password: String
     public var firstName: String
     public var lastName: String
-    public var businessName: String
+    public var username: String
     public var phone: String
     public var bio: String
     public var createTime: Date

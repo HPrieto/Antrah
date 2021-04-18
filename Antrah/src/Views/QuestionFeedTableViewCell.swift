@@ -10,7 +10,7 @@ import UIKit
 class QuestionFeedTableViewCell: UITableViewCell {
     
     enum Dimensions: CGFloat {
-        case iconHeightWidth = 15
+        case iconHeightWidth = 16
     }
     
     // MARK: - Subviews
@@ -65,7 +65,7 @@ class QuestionFeedTableViewCell: UITableViewCell {
         view.tintColor = .lightGray
         view.setImage(
             UIImage(
-                systemName: "bubble.left.fill"
+                systemName: "video.bubble.left.fill"
             ),
             for: .normal
         )

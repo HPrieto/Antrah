@@ -60,6 +60,7 @@ class MainCoordinator {
     
     enum Destination {
         case root
+        case answers
         case profile
         case settings
         case notifications
@@ -79,8 +80,7 @@ class MainCoordinator {
     }()
     
     private(set) lazy var authNavigationController: UINavigationController = {
-        let navController = NavigationController(rootViewController: homeViewController)
-        return navController
+        NavigationController(rootViewController: homeViewController)
     }()
     
     // MARK: - Auth ViewControllers
@@ -117,6 +117,11 @@ class MainCoordinator {
             )
         ]
         controller.questionFeedDelegate = self
+        return controller
+    }()
+    
+    private(set) lazy var answerFeedViewController: UIViewController = { [unowned self] in
+        let controller: AnswerFeedViewController = AnswerFeedViewController()
         return controller
     }()
     
@@ -188,6 +193,8 @@ class MainCoordinator {
     
     public func show(_ destination: Destination = .root) {
         switch destination {
+        case .answers:
+            rootNavigationController.pushViewController(answerFeedViewController, animated: true)
         case .profile:
             rootNavigationController.pushViewController(profileViewController, animated: true)
         case .settings:
@@ -236,7 +243,7 @@ extension MainCoordinator: AskQuestionViewControllerDelegate {
 
 extension MainCoordinator: QuestionFeedViewControllerDelegate {
     func questionFeedViewController(_ controller: QuestionFeedViewController, didSelectRowAt indexPath: IndexPath) {
-        
+        show(.answers)
     }
     
     func questionFeedViewController(_ controller: QuestionFeedViewController, askQuestionButtonTapped button: UIButton) {

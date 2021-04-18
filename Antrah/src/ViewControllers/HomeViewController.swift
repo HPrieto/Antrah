@@ -26,10 +26,14 @@ class HomeViewController: UIViewController {
         case google = "Continue with Google"
         case existingAccount = "Already have an account?"
         case login = "Log in"
+        case termsOfServiceLink = "Terms of Service"
+        case privacyPolicyLink = "Privacy Policy"
+        case loginLink = "Log In"
     }
     
     enum Dimensions: CGFloat {
         case buttonHeight = 36
+        case loginTextViewHeight = 60
     }
     
     // MARK: - Public Properties
@@ -99,7 +103,7 @@ class HomeViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         
         let termsOfServiceText: NSMutableAttributedString = NSMutableAttributedString(
-            string: "Terms of Service"
+            string: Strings.termsOfServiceLink.rawValue
         )
         termsOfServiceText.addFontAttribute(font: .medium(ofSize: .fontSmall12px))
         termsOfServiceText.addColorAttribute(color: .darkerGray)
@@ -110,7 +114,7 @@ class HomeViewController: UIViewController {
         )
         
         let privacyPolicyText: NSMutableAttributedString = NSMutableAttributedString(
-            string: "Privacy Policy"
+            string: Strings.privacyPolicyLink.rawValue
         )
         privacyPolicyText.addAttribute(
             NSAttributedString.Key.link,
@@ -120,7 +124,7 @@ class HomeViewController: UIViewController {
         privacyPolicyText.addFontAttribute(font: .medium(ofSize: .fontSmall12px))
         privacyPolicyText.addColorAttribute(color: .darkerGray)
         
-        view.attributedText = NSMutableAttributedString(
+        let mutableString: NSMutableAttributedString = NSMutableAttributedString(
             attributedStrings: [
                 NSAttributedString(
                     string: "By signing up, you agree to our ",
@@ -141,6 +145,60 @@ class HomeViewController: UIViewController {
                 ),
             ]
         )
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .center
+        mutableString.addAttribute(
+            NSAttributedString.Key.paragraphStyle,
+            value: paragraphStyle,
+            range: NSMakeRange(0, mutableString.string.count)
+        )
+        
+        view.attributedText = mutableString
+        view.isEditable = false
+        view.isSelectable = true
+        view.delegate = self
+        return view
+    }()
+    
+    private(set) lazy var loginTextView: UITextView = { [unowned self] in
+        let view = UITextView()
+        view.textColor = .gray
+        view.backgroundColor = .systemGroupedBackground
+        view.textAlignment = .center
+        view.font = .regular(ofSize: .fontSmall12px)
+        view.isScrollEnabled = false
+        view.sizeToFit()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        let loginText: NSMutableAttributedString = NSMutableAttributedString(
+            string: Strings.loginLink.rawValue
+        )
+        loginText.addFontAttribute(font: .medium(ofSize: .fontSmall12px))
+        loginText.addColorAttribute(color: .darkerGray)
+        loginText.addAttribute(
+            NSAttributedString.Key.link,
+            value: "",
+            range: NSRange(location: 0, length: loginText.length)
+        )
+        
+        let mutableString: NSMutableAttributedString = NSMutableAttributedString(
+            attributedStrings: [
+                NSAttributedString(
+                    string: "Already have an account? ",
+                    color: UIColor.gray,
+                    font: UIFont.regular(ofSize: .fontSmall12px)
+                ),
+                loginText
+            ]
+        )
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .center
+        mutableString.addAttribute(
+            NSAttributedString.Key.paragraphStyle,
+            value: paragraphStyle,
+            range: NSMakeRange(0, mutableString.string.count)
+        )
+        view.attributedText = mutableString
         view.isEditable = false
         view.isSelectable = true
         view.delegate = self
@@ -166,6 +224,7 @@ class HomeViewController: UIViewController {
         view.addSubview(signupButton)
         view.addSubview(googleSignupButton)
         view.addSubview(legalTextView)
+        view.addSubview(loginTextView)
         
         titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: .spacingMacro16px).isActive = true
         titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: .spacingMacro16px).isActive = true
@@ -181,9 +240,14 @@ class HomeViewController: UIViewController {
         googleSignupButton.rightAnchor.constraint(equalTo: titleLabel.rightAnchor).isActive = true
         googleSignupButton.heightAnchor.constraint(equalToConstant: Dimensions.buttonHeight.rawValue).isActive = true
         
-        legalTextView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: CGFloat.spacingMicro12px.negative).isActive = true
+        legalTextView.bottomAnchor.constraint(equalTo: loginTextView.topAnchor, constant: CGFloat.spacingMacro16px.negative).isActive = true
         legalTextView.leftAnchor.constraint(equalTo: titleLabel.leftAnchor).isActive = true
         legalTextView.rightAnchor.constraint(equalTo: titleLabel.rightAnchor).isActive = true
+        
+        loginTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        loginTextView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        loginTextView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        loginTextView.heightAnchor.constraint(equalToConstant: Dimensions.loginTextViewHeight.rawValue).isActive = true
     }
     
     // MARK: - Life Cycle
@@ -202,10 +266,12 @@ extension HomeViewController: UITextViewDelegate {
         let interactedText: String = textView.text[characterRange].lowercased().trimmingCharacters(in: .whitespaces)
         
         switch interactedText {
-        case "terms of service":
+        case Strings.termsOfServiceLink.rawValue.lowercased():
             homeDelegate?.homeViewController(self, termsOfServiceTapped: textView)
-        case "privacy policy":
+        case Strings.privacyPolicyLink.rawValue.lowercased():
             homeDelegate?.homeViewController(self, privacyPolicyTapped: textView)
+        case Strings.loginLink.rawValue.lowercased():
+            print("Loggin in.")
         default:
             break
         }

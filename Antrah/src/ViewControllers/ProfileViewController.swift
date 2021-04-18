@@ -52,7 +52,7 @@ class ProfileViewController: UIViewController {
         return view
     }()
     
-    private(set) lazy var businessLabel: UILabel = {
+    private(set) lazy var usernameLabel: UILabel = {
         let view = UILabel()
         view.textColor = .darkerGray
         view.font = .medium(ofSize: .fontSmall12px)
@@ -102,7 +102,7 @@ class ProfileViewController: UIViewController {
         
         view.addSubview(profileImageView)
         view.addSubview(nameLabel)
-        view.addSubview(businessLabel)
+        view.addSubview(usernameLabel)
         view.addSubview(bioLabel)
         view.addSubview(addBioButton)
         
@@ -115,12 +115,12 @@ class ProfileViewController: UIViewController {
         nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: .spacingMicro8px).isActive = true
         nameLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: CGFloat.spacingMacro16px.negative).isActive = true
         
-        businessLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: .spacingMicro4px).isActive = true
-        businessLabel.leftAnchor.constraint(equalTo: nameLabel.leftAnchor).isActive = true
-        businessLabel.rightAnchor.constraint(equalTo: nameLabel.rightAnchor).isActive = true
+        usernameLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: .spacingMicro4px).isActive = true
+        usernameLabel.leftAnchor.constraint(equalTo: nameLabel.leftAnchor).isActive = true
+        usernameLabel.rightAnchor.constraint(equalTo: nameLabel.rightAnchor).isActive = true
         
-        bioLabel.topAnchor.constraint(equalTo: businessLabel.bottomAnchor, constant: .spacingMicro12px).isActive = true
-        bioLabel.leftAnchor.constraint(equalTo: businessLabel.leftAnchor).isActive = true
+        bioLabel.topAnchor.constraint(equalTo: usernameLabel.bottomAnchor, constant: .spacingMicro12px).isActive = true
+        bioLabel.leftAnchor.constraint(equalTo: usernameLabel.leftAnchor).isActive = true
         
         addBioButton.topAnchor.constraint(equalTo: bioLabel.bottomAnchor, constant: .spacingMicro12px).isActive = true
         addBioButton.leftAnchor.constraint(equalTo: bioLabel.leftAnchor).isActive = true
@@ -137,13 +137,13 @@ class ProfileViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         nameLabel.text = viewModel.name
-        businessLabel.text = viewModel.businessName
+        usernameLabel.text = viewModel.username
         bioLabel.text = viewModel.bio
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.viewModel = ProfileViewModel(
-            user: User(id: "1", email: "HPrieto@mfour.com", password: "MFourT3st", firstName: "Heriberto", lastName: "Prieto", businessName: "Antrah", phone: "9092512202", bio: "", createTime: Date(), imageUrl: "")
+            user: User(id: "1", email: "HPrieto@mfour.com", password: "MFourT3st", firstName: "Heriberto", lastName: "Prieto", username: "@HPrieto", phone: "9092512202", bio: "", createTime: Date(), imageUrl: "")
         )
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -170,8 +170,8 @@ class ProfileViewModel {
         "\(user.firstName) \(user.lastName)"
     }
     
-    public var businessName: String {
-        "\(user.businessName)"
+    public var username: String {
+        "\(user.username)"
     }
     
     public var bio: String {

@@ -32,7 +32,7 @@ class AskQuestionViewController: UIViewController {
         case submitButtonTitle = "Submit Question"
         case tags = "Tags"
         case tagsDescription = "Add up to 5 tags to describe what your question is about."
-        case tagsTextFieldPlaceholder = "e.g. (licensing marketing retail)"
+        case tagsTextFieldPlaceholder = "e.g. (career love health)"
     }
     
     // MARK: - Private Properties

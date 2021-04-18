@@ -20,6 +20,9 @@
 		4333335E262375D400107A46 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333335D262375D400107A46 /* HomeViewController.swift */; };
 		433333632623826C00107A46 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433333622623826C00107A46 /* String+Extensions.swift */; };
 		433333772623A0D700107A46 /* Character+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433333762623A0D700107A46 /* Character+Extensions.swift */; };
+		4333337C262A280600107A46 /* AnswerFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333337B262A280600107A46 /* AnswerFeedViewController.swift */; };
+		43333381262A287800107A46 /* QuestionTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43333380262A287800107A46 /* QuestionTableViewHeaderFooterView.swift */; };
+		4333338C262A36F500107A46 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333338B262A36F500107A46 /* UICollectionViewCell+Extensions.swift */; };
 		43B278D926190E60006470AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278D826190E60006470AB /* AppDelegate.swift */; };
 		43B278DB26190E60006470AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278DA26190E60006470AB /* SceneDelegate.swift */; };
 		43B278E326190E60006470AB /* Antrah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43B278E126190E60006470AB /* Antrah.xcdatamodeld */; };
@@ -86,6 +89,9 @@
 		4333335D262375D400107A46 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		433333622623826C00107A46 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		433333762623A0D700107A46 /* Character+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Extensions.swift"; sourceTree = "<group>"; };
+		4333337B262A280600107A46 /* AnswerFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerFeedViewController.swift; sourceTree = "<group>"; };
+		43333380262A287800107A46 /* QuestionTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		4333338B262A36F500107A46 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		43B278D526190E60006470AB /* Antrah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antrah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B278D826190E60006470AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43B278DA26190E60006470AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +263,7 @@
 				43333353262290AF00107A46 /* UIView+Extensions.swift */,
 				433333622623826C00107A46 /* String+Extensions.swift */,
 				433333762623A0D700107A46 /* Character+Extensions.swift */,
+				4333338B262A36F500107A46 /* UICollectionViewCell+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -272,6 +279,7 @@
 				4333332C26221ECF00107A46 /* SettingsViewController.swift */,
 				4333335826229DA300107A46 /* NavigationController.swift */,
 				4333335D262375D400107A46 /* HomeViewController.swift */,
+				4333337B262A280600107A46 /* AnswerFeedViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +292,7 @@
 				43EA8B35261A85F000CC2626 /* QuestionFeedTableViewCell.swift */,
 				43EA8B42261ACCE700CC2626 /* NotificationFeedTableViewCell.swift */,
 				43333331262220A200107A46 /* ButtonTableViewHeaderFooter.swift */,
+				43333380262A287800107A46 /* QuestionTableViewHeaderFooterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -526,6 +535,7 @@
 			files = (
 				43EA8B082619662900CC2626 /* CGFloat+Extensions.swift in Sources */,
 				43EA8B55261AD7B600CC2626 /* NSAttributedString+Extensions.swift in Sources */,
+				4333337C262A280600107A46 /* AnswerFeedViewController.swift in Sources */,
 				433333772623A0D700107A46 /* Character+Extensions.swift in Sources */,
 				43EA8B1D261A7E7300CC2626 /* QuestionTag.swift in Sources */,
 				433333452622275E00107A46 /* AppContext.swift in Sources */,
@@ -547,6 +557,7 @@
 				4333333A262222C800107A46 /* UITableViewHeaderFooterView.swift in Sources */,
 				43B2792426192797006470AB /* AskQuestionViewController.swift in Sources */,
 				433333402622275200107A46 /* DeviceInformation.swift in Sources */,
+				4333338C262A36F500107A46 /* UICollectionViewCell+Extensions.swift in Sources */,
 				43EA8B27261A7FDD00CC2626 /* Vote.swift in Sources */,
 				4333335E262375D400107A46 /* HomeViewController.swift in Sources */,
 				43B2791B26192726006470AB /* UIFont+Extensions.swift in Sources */,
@@ -559,6 +570,7 @@
 				43B278DB26190E60006470AB /* SceneDelegate.swift in Sources */,
 				43EA8B5A261C1CA400CC2626 /* SignupViewController.swift in Sources */,
 				43EA8B43261ACCE700CC2626 /* NotificationFeedTableViewCell.swift in Sources */,
+				43333381262A287800107A46 /* QuestionTableViewHeaderFooterView.swift in Sources */,
 				43EA8B12261A7D3700CC2626 /* QuestionFeedViewController.swift in Sources */,
 				4333332D26221ECF00107A46 /* SettingsViewController.swift in Sources */,
 			);

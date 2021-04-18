@@ -10,13 +10,17 @@ import UIKit
 class SignupViewController: UIViewController {
     
     enum Strings: String {
-        case title = "Easily gather, track, and manage user feedback"
+        case title = "Dialogue is the pathway to truth."
         case emailPlaceholder = "Email"
         case passwordPlaceholder = "Password"
         case firstNamePlaceholder = "First Name"
         case lastNamePlaceholder = "Last Name"
-        case companyPlaceholder = "Company/App Name"
+        case companyPlaceholder = "Username"
         case signupButtonTitle = "Sign Up"
+    }
+    
+    enum Dimensions: CGFloat {
+        case textFieldFontSize = 14
     }
     
     // MARK: - Subviews
@@ -29,7 +33,7 @@ class SignupViewController: UIViewController {
                 passwordTextField,
                 firstNameTextField,
                 lastNameTextField,
-                companyTextField,
+                usernameTextField,
                 signupButton
             ]
         )
@@ -50,7 +54,7 @@ class SignupViewController: UIViewController {
     
     private(set) lazy var emailTextField: UITextField = {
         let view = UITextField()
-        view.font = .regular(ofSize: .fontLarge16px)
+        view.font = .regular(ofSize: Dimensions.textFieldFontSize.rawValue)
         view.keyboardType = .namePhonePad
         view.textColor = .darkerGray
         view.autocorrectionType = .no
@@ -67,7 +71,7 @@ class SignupViewController: UIViewController {
     
     private(set) lazy var passwordTextField: UITextField = {
         let view = UITextField()
-        view.font = .regular(ofSize: .fontLarge16px)
+        view.font = .regular(ofSize: Dimensions.textFieldFontSize.rawValue)
         view.isSecureTextEntry = true
         view.textColor = .darkerGray
         view.autocorrectionType = .no
@@ -84,7 +88,7 @@ class SignupViewController: UIViewController {
     
     private(set) lazy var firstNameTextField: UITextField = {
         let view = UITextField()
-        view.font = .regular(ofSize: .fontLarge16px)
+        view.font = .regular(ofSize: Dimensions.textFieldFontSize.rawValue)
         view.keyboardType = .namePhonePad
         view.textColor = .darkerGray
         view.autocorrectionType = .no
@@ -101,7 +105,7 @@ class SignupViewController: UIViewController {
     
     private(set) lazy var lastNameTextField: UITextField = {
         let view = UITextField()
-        view.font = .regular(ofSize: .fontLarge16px)
+        view.font = .regular(ofSize: Dimensions.textFieldFontSize.rawValue)
         view.keyboardType = .namePhonePad
         view.textColor = .darkerGray
         view.autocorrectionType = .no
@@ -116,9 +120,9 @@ class SignupViewController: UIViewController {
         return view
     }()
     
-    private(set) lazy var companyTextField: UITextField = {
+    private(set) lazy var usernameTextField: UITextField = {
         let view = UITextField()
-        view.font = .regular(ofSize: .fontLarge16px)
+        view.font = .regular(ofSize: Dimensions.textFieldFontSize.rawValue)
         view.keyboardType = .namePhonePad
         view.textColor = .darkerGray
         view.autocorrectionType = .no
