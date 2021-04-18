@@ -6,6 +6,7 @@ target 'Antrah' do
   use_frameworks!
 
   # Pods for Antrah
+  pod 'PixelSDK'
 
   target 'AntrahTests' do
     inherit! :search_paths
