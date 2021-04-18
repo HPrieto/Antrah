@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		4333337C262A280600107A46 /* AnswerFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333337B262A280600107A46 /* AnswerFeedViewController.swift */; };
 		43333381262A287800107A46 /* QuestionTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43333380262A287800107A46 /* QuestionTableViewHeaderFooterView.swift */; };
 		4333338C262A36F500107A46 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333338B262A36F500107A46 /* UICollectionViewCell+Extensions.swift */; };
+		433333B1262CBF8D00107A46 /* PixelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433333B0262CBF8D00107A46 /* PixelManager.swift */; };
 		43B278D926190E60006470AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278D826190E60006470AB /* AppDelegate.swift */; };
 		43B278DB26190E60006470AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B278DA26190E60006470AB /* SceneDelegate.swift */; };
 		43B278E326190E60006470AB /* Antrah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43B278E126190E60006470AB /* Antrah.xcdatamodeld */; };
@@ -92,6 +93,7 @@
 		4333337B262A280600107A46 /* AnswerFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerFeedViewController.swift; sourceTree = "<group>"; };
 		43333380262A287800107A46 /* QuestionTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
 		4333338B262A36F500107A46 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		433333B0262CBF8D00107A46 /* PixelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelManager.swift; sourceTree = "<group>"; };
 		43B278D526190E60006470AB /* Antrah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antrah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B278D826190E60006470AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43B278DA26190E60006470AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		433333AF262CBF6C00107A46 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				433333B0262CBF8D00107A46 /* PixelManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		43B278CC26190E60006470AB = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +239,7 @@
 		43B2790F26190EB3006470AB /* src */ = {
 			isa = PBXGroup;
 			children = (
+				433333AF262CBF6C00107A46 /* Managers */,
 				4333333E2622274200107A46 /* Util */,
 				43EA8B16261A7DE700CC2626 /* Models */,
 				43B2792D26192E1E006470AB /* Views */,
@@ -343,6 +354,7 @@
 				43B278D126190E60006470AB /* Sources */,
 				43B278D226190E60006470AB /* Frameworks */,
 				43B278D326190E60006470AB /* Resources */,
+				1DD7B41FF047837C8ADB5710 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,6 +392,7 @@
 				43B278F526190E61006470AB /* Sources */,
 				43B278F626190E61006470AB /* Frameworks */,
 				43B278F726190E61006470AB /* Resources */,
+				6960E11A5E5BA1CD4760A513 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -460,6 +473,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1DD7B41FF047837C8ADB5710 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Antrah/Pods-Antrah-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Antrah/Pods-Antrah-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Antrah/Pods-Antrah-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6960E11A5E5BA1CD4760A513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6C34F24CAB445BF5416BCBB3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,6 +593,7 @@
 				4333334A2622297B00107A46 /* UIBarButtonItem+Extensions.swift in Sources */,
 				43B278D926190E60006470AB /* AppDelegate.swift in Sources */,
 				43EA8B0D2619713D00CC2626 /* BorderView.swift in Sources */,
+				433333B1262CBF8D00107A46 /* PixelManager.swift in Sources */,
 				433333632623826C00107A46 /* String+Extensions.swift in Sources */,
 				4333335926229DA300107A46 /* NavigationController.swift in Sources */,
 				43EA8B18261A7DF300CC2626 /* Question.swift in Sources */,

@@ -3,23 +3,82 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		31C731E1D92A46A86B580AE667C9D567 /* PixelSDK-GPUImage3 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0421767B1EEFA4DA0BFF17DEFC1D7843 /* Build configuration list for PBXAggregateTarget "PixelSDK-GPUImage3" */;
+			buildPhases = (
+				7EDCAB74296F9FAC6F2B9316EBC8258F /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "PixelSDK-GPUImage3";
+		};
+		E4CCE2DEE87A7CB6ED83791A3E4813FB /* PixelSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 367600C5EFB28704E952DDEE49A75A38 /* Build configuration list for PBXAggregateTarget "PixelSDK" */;
+			buildPhases = (
+				963D01246719166B796D8683973D74E9 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				AA5A6564B46A0DE441D2498B4159FF89 /* PBXTargetDependency */,
+			);
+			name = PixelSDK;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		015CC174E43E210C06BCE6076F7CC2BD /* Pods-Antrah-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C2BB7BAC0B1CF2464827DE325CBFC0 /* Pods-Antrah-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		278C5B080BB01F34AB95C4064093524F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		678BAE46B2A5FB2B10FB6E999166776C /* Pods-AntrahTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E5ECD0C2561E2E301B03D510355415 /* Pods-AntrahTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7686A278A824901EA13A76F43F8D25D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8EC30FC2FD77B283B8BE938A508E2E90 /* Pods-Antrah-AntrahUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6DAEDE2BA83F3224E7719310BD3D09 /* Pods-Antrah-AntrahUITests-dummy.m */; };
-		B1176C7F29139E7913D758E560A02DF1 /* Pods-AntrahTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F170DACC08DFCE99ED0ECDEA7606FF /* Pods-AntrahTests-dummy.m */; };
+		237DFF0E806F213939B8AAB3D550253F /* Pods-Antrah-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E6EDB5F5138C158C6A17BF70FD5EB9 /* Pods-Antrah-dummy.m */; };
+		618DF9769A12BB374E571351EE6A851D /* Pods-Antrah-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02AE847FD6320C62AA491DC4FE211080 /* Pods-Antrah-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		678BAE46B2A5FB2B10FB6E999166776C /* Pods-AntrahTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D599D0715CDEF4AA1AAD36F151C6206 /* Pods-AntrahTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72B394E44148982B0F011834ED693191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8228CAC7C57BF95093B0180B122B37C9 /* Pods-Antrah-AntrahUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C031130E44ACD37E745ACAA28298C /* Pods-Antrah-AntrahUITests-dummy.m */; };
+		A3B2A27CD28B850AD366ED1D7137FA18 /* Pods-Antrah-AntrahUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B590CCD73A4138952F19E993F2E6E37 /* Pods-Antrah-AntrahUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1176C7F29139E7913D758E560A02DF1 /* Pods-AntrahTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73C13806BA739E54E031A492D321DA /* Pods-AntrahTests-dummy.m */; };
 		B7E8457543EE981709FC76BADEC7C613 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D4D0BB16BD9EC038C03ABE95AE3A8986 /* Pods-Antrah-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A4A82AA5C73E96DFABB5609E75768C /* Pods-Antrah-dummy.m */; };
-		DD3C9EE8C5D05720A1E5D116EBC312AD /* Pods-Antrah-AntrahUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F47433797634C19298064F4440C9F2 /* Pods-Antrah-AntrahUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5C0DA1526E4CCA334EAED17489C30F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		023E7D676BBE31F1D03A0B815BB3C370 /* PBXContainerItemProxy */ = {
+		02B4274B9CAEA1F855187E60BA90FA54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31C731E1D92A46A86B580AE667C9D567;
+			remoteInfo = "PixelSDK-GPUImage3";
+		};
+		2C932AEE61F1965A10FEACFD0882C7C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31C731E1D92A46A86B580AE667C9D567;
+			remoteInfo = "PixelSDK-GPUImage3";
+		};
+		68613BEA1A042A5C78C7EE736511AF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31C731E1D92A46A86B580AE667C9D567;
+			remoteInfo = "PixelSDK-GPUImage3";
+		};
+		D55ED7F7312C189EF3683543206FA693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4CCE2DEE87A7CB6ED83791A3E4813FB;
+			remoteInfo = PixelSDK;
+		};
+		E3389491227ABAF5F76ACAF4CB1AB59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4CCE2DEE87A7CB6ED83791A3E4813FB;
+			remoteInfo = PixelSDK;
+		};
+		FF8507D206624168B95AE88450EE5237 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -29,46 +88,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02AE847FD6320C62AA491DC4FE211080 /* Pods-Antrah-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Antrah-umbrella.h"; sourceTree = "<group>"; };
+		0301382E185945774EA7EEB7521F3291 /* Pods-AntrahTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AntrahTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		05FAD383A9ADBC076C43414E5CB42457 /* Pods_Antrah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Antrah.framework; path = "Pods-Antrah.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E392FFD500739C9086B438C6AD0F7D6 /* Pods-Antrah-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Antrah-acknowledgements.plist"; sourceTree = "<group>"; };
-		0F0628FAEBA04D98E4158C7BDD8A64D0 /* Pods-Antrah-AntrahUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Antrah-AntrahUITests-Info.plist"; sourceTree = "<group>"; };
-		1150AB92051B531D93B1C85C3466D5D8 /* Pods-Antrah.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Antrah.modulemap"; sourceTree = "<group>"; };
-		13D46C54B4A8A306A7E665AFC361E005 /* Pods-Antrah-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Antrah-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1C07E27F6280B54FE09151542848F2CC /* Pods-AntrahTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AntrahTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2A909EA31CD5887EEF6D487C4F1E58F4 /* Pods-AntrahTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AntrahTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		40E2C4CC39794DAC456C47ECFDA24C9D /* Pods-Antrah-AntrahUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Antrah-AntrahUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4B4B86673655FDA799F46DBFB07863F1 /* Pods-Antrah-AntrahUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Antrah-AntrahUITests.release.xcconfig"; sourceTree = "<group>"; };
-		50069508D17FE1ED1C7521883573C219 /* Pods-AntrahTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AntrahTests-Info.plist"; sourceTree = "<group>"; };
-		56A4A82AA5C73E96DFABB5609E75768C /* Pods-Antrah-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Antrah-dummy.m"; sourceTree = "<group>"; };
-		6196530809B0FECB9E64DE8D8B9C111A /* Pods-Antrah-AntrahUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Antrah-AntrahUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		06F17AAD104459A88D44032C91621CE4 /* PixelSDK-GPUImage3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PixelSDK-GPUImage3.release.xcconfig"; sourceTree = "<group>"; };
+		10BADC3393B04F8F8126D9FFB8BD3A17 /* PixelSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "PixelSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		1B3C94726F0D59D6A3FA13A12691F8A5 /* Pods-Antrah-AntrahUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Antrah-AntrahUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2D599D0715CDEF4AA1AAD36F151C6206 /* Pods-AntrahTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AntrahTests-umbrella.h"; sourceTree = "<group>"; };
+		2E9574B511F68AF7FE8C1D6E10E77572 /* Pods-AntrahTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AntrahTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		33FF3D14AB1E9B204E685C89A6FDA902 /* GPUImage.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GPUImage.xcframework; path = framework/Build/GPUImage.xcframework; sourceTree = "<group>"; };
+		3B590CCD73A4138952F19E993F2E6E37 /* Pods-Antrah-AntrahUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Antrah-AntrahUITests-umbrella.h"; sourceTree = "<group>"; };
+		429208121D4FDDC6D695B4EBF607214C /* Pods-Antrah-AntrahUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Antrah-AntrahUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A5AC0300B0B8D792C098EF0EEF448C5 /* PixelSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PixelSDK.debug.xcconfig; sourceTree = "<group>"; };
+		4E404229D72ACAB53DE60B516352F171 /* Pods-Antrah-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Antrah-frameworks.sh"; sourceTree = "<group>"; };
+		4FDA09DA62196A1C89263F7CA492B5A7 /* Pods-Antrah.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Antrah.modulemap"; sourceTree = "<group>"; };
+		5968500A5EDAB4D533306E7A04253C0C /* Pods-AntrahTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AntrahTests.modulemap"; sourceTree = "<group>"; };
 		63BFA9A90D12030DFF15A65E0BCF6510 /* Pods_Antrah_AntrahUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Antrah_AntrahUITests.framework; path = "Pods-Antrah-AntrahUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66A99918EEF4443D281DA37F4A5E9531 /* Pods-AntrahTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AntrahTests.release.xcconfig"; sourceTree = "<group>"; };
+		69B9978CBF075F7BEE3D943B59BD1A27 /* Pods-AntrahTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AntrahTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B49D3F9BA137438364AB1DA327809BE /* Pods-Antrah-AntrahUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Antrah-AntrahUITests-Info.plist"; sourceTree = "<group>"; };
+		6B9F670E8D5BBF0F38B5DED6D5C4A986 /* PixelSDK-GPUImage3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PixelSDK-GPUImage3.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76F170DACC08DFCE99ED0ECDEA7606FF /* Pods-AntrahTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AntrahTests-dummy.m"; sourceTree = "<group>"; };
-		803C92211FE5D4E6584D0310950E492A /* Pods-Antrah-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Antrah-Info.plist"; sourceTree = "<group>"; };
-		8B8A83157F9B52F8FADE6198585419EC /* Pods-Antrah-AntrahUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Antrah-AntrahUITests.modulemap"; sourceTree = "<group>"; };
+		83762A96A9A5871F9AB3C03571E5032E /* PixelSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PixelSDK.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC6DAEDE2BA83F3224E7719310BD3D09 /* Pods-Antrah-AntrahUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Antrah-AntrahUITests-dummy.m"; sourceTree = "<group>"; };
-		B0E5ECD0C2561E2E301B03D510355415 /* Pods-AntrahTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AntrahTests-umbrella.h"; sourceTree = "<group>"; };
-		B529F971892A622932E42F060F116D83 /* Pods-Antrah-AntrahUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Antrah-AntrahUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C7F47433797634C19298064F4440C9F2 /* Pods-Antrah-AntrahUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Antrah-AntrahUITests-umbrella.h"; sourceTree = "<group>"; };
-		D02F0A3F1087E2FC9B81D4ABD60EE6E3 /* Pods-AntrahTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AntrahTests.modulemap"; sourceTree = "<group>"; };
-		D07B88F0D78A3E652D2019BE85E49017 /* Pods-Antrah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Antrah.release.xcconfig"; sourceTree = "<group>"; };
-		E0C2BB7BAC0B1CF2464827DE325CBFC0 /* Pods-Antrah-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Antrah-umbrella.h"; sourceTree = "<group>"; };
-		E82A6C9C63EE84C8946B0462081EF9CF /* Pods-AntrahTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AntrahTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A3E6EDB5F5138C158C6A17BF70FD5EB9 /* Pods-Antrah-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Antrah-dummy.m"; sourceTree = "<group>"; };
+		A7033516D3F42F4443E179AF194042E5 /* Pods-Antrah-AntrahUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Antrah-AntrahUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB73C13806BA739E54E031A492D321DA /* Pods-AntrahTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AntrahTests-dummy.m"; sourceTree = "<group>"; };
+		B4A6FADB9B55BB78895680A2B6BC998A /* PixelSDK-GPUImage3-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "PixelSDK-GPUImage3-xcframeworks.sh"; sourceTree = "<group>"; };
+		B8BBA54B27E64E6AA572DCE39019582C /* Pods-Antrah-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Antrah-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD4F89B406626E8FF95D6042DCE96F97 /* Pods-Antrah-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Antrah-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C32ED5C0FD4306010DB14BD54E797999 /* Pods-Antrah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Antrah.debug.xcconfig"; sourceTree = "<group>"; };
+		C960369A054CB74695C0299B970E8722 /* Pods-Antrah-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Antrah-Info.plist"; sourceTree = "<group>"; };
+		CA54418E86028F749D11A388D71F6908 /* Pods-Antrah-AntrahUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Antrah-AntrahUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D34C031130E44ACD37E745ACAA28298C /* Pods-Antrah-AntrahUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Antrah-AntrahUITests-dummy.m"; sourceTree = "<group>"; };
+		E2DFCC0886587BA88D80D4F2B369CD08 /* Pods-AntrahTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AntrahTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5E724598A5C83D5F86CE73BEF92BE31 /* Pods-Antrah-AntrahUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Antrah-AntrahUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA9C140038CB29F2CC662EA4C3028427 /* Pods-Antrah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Antrah.release.xcconfig"; sourceTree = "<group>"; };
+		EF202458552D4C3D446C08519AA61DB4 /* PixelSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = PixelSDK.xcframework; sourceTree = "<group>"; };
 		F16AA1E3ED54D30B24585D12D1A8B181 /* Pods_AntrahTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AntrahTests.framework; path = "Pods-AntrahTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F877951DC02ADC7A742FCDF9FCF784FC /* Pods-Antrah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Antrah.debug.xcconfig"; sourceTree = "<group>"; };
+		F748F515362F43CD5AE334B20C3521B4 /* Pods-Antrah-AntrahUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Antrah-AntrahUITests.modulemap"; sourceTree = "<group>"; };
+		FB8D9F9DE9ECD42AE04F1972366FE0BE /* Pods-AntrahTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AntrahTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E330B3015AEDDF8EF2469435BB8AE74 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				278C5B080BB01F34AB95C4064093524F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1A017D2C6FCC08728BD1AE2FAB07203A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,47 +138,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CBABCD3CAE718C9BDEDD53F32DA4DB2 /* Frameworks */ = {
+		70FCBC3A76BFEC46693137C96D5E409A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7686A278A824901EA13A76F43F8D25D2 /* Foundation.framework in Frameworks */,
+				72B394E44148982B0F011834ED693191 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8444D71F2696ACA221AE4B53501E796F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C0DA1526E4CCA334EAED17489C30F8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B2370A016759A2F28A6B09B4BC4300C /* Pods-Antrah-AntrahUITests */ = {
+		308B249B54E439D9245189F6AA8C69EC /* PixelSDK-GPUImage3 */ = {
 			isa = PBXGroup;
 			children = (
-				8B8A83157F9B52F8FADE6198585419EC /* Pods-Antrah-AntrahUITests.modulemap */,
-				6196530809B0FECB9E64DE8D8B9C111A /* Pods-Antrah-AntrahUITests-acknowledgements.markdown */,
-				B529F971892A622932E42F060F116D83 /* Pods-Antrah-AntrahUITests-acknowledgements.plist */,
-				AC6DAEDE2BA83F3224E7719310BD3D09 /* Pods-Antrah-AntrahUITests-dummy.m */,
-				0F0628FAEBA04D98E4158C7BDD8A64D0 /* Pods-Antrah-AntrahUITests-Info.plist */,
-				C7F47433797634C19298064F4440C9F2 /* Pods-Antrah-AntrahUITests-umbrella.h */,
-				40E2C4CC39794DAC456C47ECFDA24C9D /* Pods-Antrah-AntrahUITests.debug.xcconfig */,
-				4B4B86673655FDA799F46DBFB07863F1 /* Pods-Antrah-AntrahUITests.release.xcconfig */,
+				A83C552DD43E530E571A5C59BE7DB17B /* Frameworks */,
+				A3B717446483283FBB6B96F1B5B854C5 /* Support Files */,
 			);
-			name = "Pods-Antrah-AntrahUITests";
-			path = "Target Support Files/Pods-Antrah-AntrahUITests";
+			name = "PixelSDK-GPUImage3";
+			path = "PixelSDK-GPUImage3";
 			sourceTree = "<group>";
 		};
-		4756628174BF0113B9BBE3170A3B2D55 /* Pods-AntrahTests */ = {
+		30F3C06463D85E3A8A02A717C4DE9DAB /* Pods-Antrah */ = {
 			isa = PBXGroup;
 			children = (
-				D02F0A3F1087E2FC9B81D4ABD60EE6E3 /* Pods-AntrahTests.modulemap */,
-				2A909EA31CD5887EEF6D487C4F1E58F4 /* Pods-AntrahTests-acknowledgements.markdown */,
-				E82A6C9C63EE84C8946B0462081EF9CF /* Pods-AntrahTests-acknowledgements.plist */,
-				76F170DACC08DFCE99ED0ECDEA7606FF /* Pods-AntrahTests-dummy.m */,
-				50069508D17FE1ED1C7521883573C219 /* Pods-AntrahTests-Info.plist */,
-				B0E5ECD0C2561E2E301B03D510355415 /* Pods-AntrahTests-umbrella.h */,
-				1C07E27F6280B54FE09151542848F2CC /* Pods-AntrahTests.debug.xcconfig */,
-				66A99918EEF4443D281DA37F4A5E9531 /* Pods-AntrahTests.release.xcconfig */,
+				4FDA09DA62196A1C89263F7CA492B5A7 /* Pods-Antrah.modulemap */,
+				BD4F89B406626E8FF95D6042DCE96F97 /* Pods-Antrah-acknowledgements.markdown */,
+				B8BBA54B27E64E6AA572DCE39019582C /* Pods-Antrah-acknowledgements.plist */,
+				A3E6EDB5F5138C158C6A17BF70FD5EB9 /* Pods-Antrah-dummy.m */,
+				4E404229D72ACAB53DE60B516352F171 /* Pods-Antrah-frameworks.sh */,
+				C960369A054CB74695C0299B970E8722 /* Pods-Antrah-Info.plist */,
+				02AE847FD6320C62AA491DC4FE211080 /* Pods-Antrah-umbrella.h */,
+				C32ED5C0FD4306010DB14BD54E797999 /* Pods-Antrah.debug.xcconfig */,
+				EA9C140038CB29F2CC662EA4C3028427 /* Pods-Antrah.release.xcconfig */,
 			);
-			name = "Pods-AntrahTests";
-			path = "Target Support Files/Pods-AntrahTests";
+			name = "Pods-Antrah";
+			path = "Target Support Files/Pods-Antrah";
+			sourceTree = "<group>";
+		};
+		32719FF20071F388F34F061C7CFAB3F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF202458552D4C3D446C08519AA61DB4 /* PixelSDK.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -128,20 +200,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5ED8EBE7C1D9930F12856A88FEEC0B38 /* Pods-Antrah */ = {
+		A3B717446483283FBB6B96F1B5B854C5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1150AB92051B531D93B1C85C3466D5D8 /* Pods-Antrah.modulemap */,
-				13D46C54B4A8A306A7E665AFC361E005 /* Pods-Antrah-acknowledgements.markdown */,
-				0E392FFD500739C9086B438C6AD0F7D6 /* Pods-Antrah-acknowledgements.plist */,
-				56A4A82AA5C73E96DFABB5609E75768C /* Pods-Antrah-dummy.m */,
-				803C92211FE5D4E6584D0310950E492A /* Pods-Antrah-Info.plist */,
-				E0C2BB7BAC0B1CF2464827DE325CBFC0 /* Pods-Antrah-umbrella.h */,
-				F877951DC02ADC7A742FCDF9FCF784FC /* Pods-Antrah.debug.xcconfig */,
-				D07B88F0D78A3E652D2019BE85E49017 /* Pods-Antrah.release.xcconfig */,
+				B4A6FADB9B55BB78895680A2B6BC998A /* PixelSDK-GPUImage3-xcframeworks.sh */,
+				6B9F670E8D5BBF0F38B5DED6D5C4A986 /* PixelSDK-GPUImage3.debug.xcconfig */,
+				06F17AAD104459A88D44032C91621CE4 /* PixelSDK-GPUImage3.release.xcconfig */,
 			);
-			name = "Pods-Antrah";
-			path = "Target Support Files/Pods-Antrah";
+			name = "Support Files";
+			path = "../Target Support Files/PixelSDK-GPUImage3";
 			sourceTree = "<group>";
 		};
 		A6730382C413F3A3F03FBEE0E464EA39 /* Products */ = {
@@ -154,13 +221,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A83C552DD43E530E571A5C59BE7DB17B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33FF3D14AB1E9B204E685C89A6FDA902 /* GPUImage.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA606C93AF7878EC47F6A6616F17E71C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30F3C06463D85E3A8A02A717C4DE9DAB /* Pods-Antrah */,
+				F80B8E3C2E3C7366F5F9D9D8FAC06DA3 /* Pods-Antrah-AntrahUITests */,
+				E0137989782C670DD562EE303EEC6B8A /* Pods-AntrahTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E7477ACC4A7AD79E648D437C28E04E84 /* Pods */,
 				A6730382C413F3A3F03FBEE0E464EA39 /* Products */,
-				EEE625B5BD46340216EA446186B433BE /* Targets Support Files */,
+				CA606C93AF7878EC47F6A6616F17E71C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,19 +258,80 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EEE625B5BD46340216EA446186B433BE /* Targets Support Files */ = {
+		DD6306FD902436619F392AE920EBC22B /* PixelSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5ED8EBE7C1D9930F12856A88FEEC0B38 /* Pods-Antrah */,
-				1B2370A016759A2F28A6B09B4BC4300C /* Pods-Antrah-AntrahUITests */,
-				4756628174BF0113B9BBE3170A3B2D55 /* Pods-AntrahTests */,
+				32719FF20071F388F34F061C7CFAB3F7 /* Frameworks */,
+				E8F3F162B97464E1E86403410279B58E /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = PixelSDK;
+			path = PixelSDK;
+			sourceTree = "<group>";
+		};
+		E0137989782C670DD562EE303EEC6B8A /* Pods-AntrahTests */ = {
+			isa = PBXGroup;
+			children = (
+				5968500A5EDAB4D533306E7A04253C0C /* Pods-AntrahTests.modulemap */,
+				2E9574B511F68AF7FE8C1D6E10E77572 /* Pods-AntrahTests-acknowledgements.markdown */,
+				0301382E185945774EA7EEB7521F3291 /* Pods-AntrahTests-acknowledgements.plist */,
+				AB73C13806BA739E54E031A492D321DA /* Pods-AntrahTests-dummy.m */,
+				FB8D9F9DE9ECD42AE04F1972366FE0BE /* Pods-AntrahTests-Info.plist */,
+				2D599D0715CDEF4AA1AAD36F151C6206 /* Pods-AntrahTests-umbrella.h */,
+				E2DFCC0886587BA88D80D4F2B369CD08 /* Pods-AntrahTests.debug.xcconfig */,
+				69B9978CBF075F7BEE3D943B59BD1A27 /* Pods-AntrahTests.release.xcconfig */,
+			);
+			name = "Pods-AntrahTests";
+			path = "Target Support Files/Pods-AntrahTests";
+			sourceTree = "<group>";
+		};
+		E7477ACC4A7AD79E648D437C28E04E84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD6306FD902436619F392AE920EBC22B /* PixelSDK */,
+				308B249B54E439D9245189F6AA8C69EC /* PixelSDK-GPUImage3 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8F3F162B97464E1E86403410279B58E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10BADC3393B04F8F8126D9FFB8BD3A17 /* PixelSDK-xcframeworks.sh */,
+				4A5AC0300B0B8D792C098EF0EEF448C5 /* PixelSDK.debug.xcconfig */,
+				83762A96A9A5871F9AB3C03571E5032E /* PixelSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PixelSDK";
+			sourceTree = "<group>";
+		};
+		F80B8E3C2E3C7366F5F9D9D8FAC06DA3 /* Pods-Antrah-AntrahUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F748F515362F43CD5AE334B20C3521B4 /* Pods-Antrah-AntrahUITests.modulemap */,
+				429208121D4FDDC6D695B4EBF607214C /* Pods-Antrah-AntrahUITests-acknowledgements.markdown */,
+				1B3C94726F0D59D6A3FA13A12691F8A5 /* Pods-Antrah-AntrahUITests-acknowledgements.plist */,
+				D34C031130E44ACD37E745ACAA28298C /* Pods-Antrah-AntrahUITests-dummy.m */,
+				CA54418E86028F749D11A388D71F6908 /* Pods-Antrah-AntrahUITests-frameworks.sh */,
+				6B49D3F9BA137438364AB1DA327809BE /* Pods-Antrah-AntrahUITests-Info.plist */,
+				3B590CCD73A4138952F19E993F2E6E37 /* Pods-Antrah-AntrahUITests-umbrella.h */,
+				A7033516D3F42F4443E179AF194042E5 /* Pods-Antrah-AntrahUITests.debug.xcconfig */,
+				E5E724598A5C83D5F86CE73BEF92BE31 /* Pods-Antrah-AntrahUITests.release.xcconfig */,
+			);
+			name = "Pods-Antrah-AntrahUITests";
+			path = "Target Support Files/Pods-Antrah-AntrahUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0209ED0686B6D54757EEB0A06F582CF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618DF9769A12BB374E571351EE6A851D /* Pods-Antrah-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		483809F5C6851A40110FCD02567DE536 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,19 +340,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BC51FF036998F51EB21D08179D42FD9 /* Headers */ = {
+		6DCEC0FCDEC5C77537FB1FB9501FCFA8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				015CC174E43E210C06BCE6076F7CC2BD /* Pods-Antrah-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3326C32DAAD62C13FF1E391AC32A624 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD3C9EE8C5D05720A1E5D116EBC312AD /* Pods-Antrah-AntrahUITests-umbrella.h in Headers */,
+				A3B2A27CD28B850AD366ED1D7137FA18 /* Pods-Antrah-AntrahUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +363,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EB7AAAC19A6543B55A6CD5B35CEE3426 /* PBXTargetDependency */,
+				68202FA072BB29FFE7BA5A4B4F9E0251 /* PBXTargetDependency */,
 			);
 			name = "Pods-AntrahTests";
 			productName = "Pods-AntrahTests";
@@ -233,16 +372,18 @@
 		};
 		4FA665BEC5D5574683B7B84B754D3962 /* Pods-Antrah-AntrahUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1283452ED094555F1AAFD1B2BA6A1864 /* Build configuration list for PBXNativeTarget "Pods-Antrah-AntrahUITests" */;
+			buildConfigurationList = 4231F2A943EF66E32D6AE1D15E4EF986 /* Build configuration list for PBXNativeTarget "Pods-Antrah-AntrahUITests" */;
 			buildPhases = (
-				E3326C32DAAD62C13FF1E391AC32A624 /* Headers */,
-				275E419CF476E5BE0301E40F9F4FA3D3 /* Sources */,
-				0E330B3015AEDDF8EF2469435BB8AE74 /* Frameworks */,
-				0D7CC25A3263F1FA46B5A3358DF9EAAA /* Resources */,
+				6DCEC0FCDEC5C77537FB1FB9501FCFA8 /* Headers */,
+				66EEBB06FD8DD51BDCC87A821BD7B70F /* Sources */,
+				70FCBC3A76BFEC46693137C96D5E409A /* Frameworks */,
+				8190D2D758D8C57BB6E336366FE2DC6A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				022D0FA848BEF4898045CAC4BC3F6E8E /* PBXTargetDependency */,
+				94C9139616D6F69A736CFC906B5BD119 /* PBXTargetDependency */,
 			);
 			name = "Pods-Antrah-AntrahUITests";
 			productName = "Pods-Antrah-AntrahUITests";
@@ -251,16 +392,18 @@
 		};
 		8969DF11397D6F4A6F691E0CC4D134BD /* Pods-Antrah */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F52DFD53149EEAB00A2B4363166155B /* Build configuration list for PBXNativeTarget "Pods-Antrah" */;
+			buildConfigurationList = D9B7A26982C60CC94CA67A1FEF82D120 /* Build configuration list for PBXNativeTarget "Pods-Antrah" */;
 			buildPhases = (
-				7BC51FF036998F51EB21D08179D42FD9 /* Headers */,
-				0876ECE28A14C8CA873134DA491F6364 /* Sources */,
-				9CBABCD3CAE718C9BDEDD53F32DA4DB2 /* Frameworks */,
-				2F0FE718D71110BB045F62A160670255 /* Resources */,
+				0209ED0686B6D54757EEB0A06F582CF4 /* Headers */,
+				E6B7FAA738C4B9E266914EF35EB06ED4 /* Sources */,
+				8444D71F2696ACA221AE4B53501E796F /* Frameworks */,
+				4D7F1A6AF7AC7CCFA4766B58F4282594 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				960D9A5A114CE91B0034603B876E1220 /* PBXTargetDependency */,
+				F8D72E3A7C864833124EFCF7F9BB28AE /* PBXTargetDependency */,
 			);
 			name = "Pods-Antrah";
 			productName = "Pods-Antrah";
@@ -277,7 +420,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -289,6 +432,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E4CCE2DEE87A7CB6ED83791A3E4813FB /* PixelSDK */,
+				31C731E1D92A46A86B580AE667C9D567 /* PixelSDK-GPUImage3 */,
 				8969DF11397D6F4A6F691E0CC4D134BD /* Pods-Antrah */,
 				4FA665BEC5D5574683B7B84B754D3962 /* Pods-Antrah-AntrahUITests */,
 				040B746F6E772BF9363671E498120D58 /* Pods-AntrahTests */,
@@ -297,14 +442,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0D7CC25A3263F1FA46B5A3358DF9EAAA /* Resources */ = {
+		4D7F1A6AF7AC7CCFA4766B58F4282594 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F0FE718D71110BB045F62A160670255 /* Resources */ = {
+		8190D2D758D8C57BB6E336366FE2DC6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,20 +465,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		0876ECE28A14C8CA873134DA491F6364 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		7EDCAB74296F9FAC6F2B9316EBC8258F /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4D0BB16BD9EC038C03ABE95AE3A8986 /* Pods-Antrah-dummy.m in Sources */,
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/PixelSDK-GPUImage3/PixelSDK-GPUImage3-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/PixelSDK-GPUImage3/PixelSDK-GPUImage3-xcframeworks-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/PixelSDK-GPUImage3/PixelSDK-GPUImage3-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		275E419CF476E5BE0301E40F9F4FA3D3 /* Sources */ = {
+		963D01246719166B796D8683973D74E9 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/PixelSDK/PixelSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/PixelSDK/PixelSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/PixelSDK/PixelSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66EEBB06FD8DD51BDCC87A821BD7B70F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC30FC2FD77B283B8BE938A508E2E90 /* Pods-Antrah-AntrahUITests-dummy.m in Sources */,
+				8228CAC7C57BF95093B0180B122B37C9 /* Pods-Antrah-AntrahUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,96 +519,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6B7FAA738C4B9E266914EF35EB06ED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237DFF0E806F213939B8AAB3D550253F /* Pods-Antrah-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EB7AAAC19A6543B55A6CD5B35CEE3426 /* PBXTargetDependency */ = {
+		022D0FA848BEF4898045CAC4BC3F6E8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PixelSDK;
+			target = E4CCE2DEE87A7CB6ED83791A3E4813FB /* PixelSDK */;
+			targetProxy = D55ED7F7312C189EF3683543206FA693 /* PBXContainerItemProxy */;
+		};
+		68202FA072BB29FFE7BA5A4B4F9E0251 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Antrah";
 			target = 8969DF11397D6F4A6F691E0CC4D134BD /* Pods-Antrah */;
-			targetProxy = 023E7D676BBE31F1D03A0B815BB3C370 /* PBXContainerItemProxy */;
+			targetProxy = FF8507D206624168B95AE88450EE5237 /* PBXContainerItemProxy */;
+		};
+		94C9139616D6F69A736CFC906B5BD119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PixelSDK-GPUImage3";
+			target = 31C731E1D92A46A86B580AE667C9D567 /* PixelSDK-GPUImage3 */;
+			targetProxy = 2C932AEE61F1965A10FEACFD0882C7C7 /* PBXContainerItemProxy */;
+		};
+		960D9A5A114CE91B0034603B876E1220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PixelSDK;
+			target = E4CCE2DEE87A7CB6ED83791A3E4813FB /* PixelSDK */;
+			targetProxy = E3389491227ABAF5F76ACAF4CB1AB59A /* PBXContainerItemProxy */;
+		};
+		AA5A6564B46A0DE441D2498B4159FF89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PixelSDK-GPUImage3";
+			target = 31C731E1D92A46A86B580AE667C9D567 /* PixelSDK-GPUImage3 */;
+			targetProxy = 02B4274B9CAEA1F855187E60BA90FA54 /* PBXContainerItemProxy */;
+		};
+		F8D72E3A7C864833124EFCF7F9BB28AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PixelSDK-GPUImage3";
+			target = 31C731E1D92A46A86B580AE667C9D567 /* PixelSDK-GPUImage3 */;
+			targetProxy = 68613BEA1A042A5C78C7EE736511AF34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1D69770594ACE28A2492A044A14334BB /* Debug */ = {
+		14DFBE4C461F581378BE3862087C6E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40E2C4CC39794DAC456C47ECFDA24C9D /* Pods-Antrah-AntrahUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		53F5A72758E204016E38AF06229E13D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B4B86673655FDA799F46DBFB07863F1 /* Pods-Antrah-AntrahUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5BF7108844AFE379ECA8855960A263B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F877951DC02ADC7A742FCDF9FCF784FC /* Pods-Antrah.debug.xcconfig */;
+			baseConfigurationReference = C32ED5C0FD4306010DB14BD54E797999 /* Pods-Antrah.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -469,9 +606,9 @@
 			};
 			name = Debug;
 		};
-		5F9CE50E998455F6DF0DE10974EDFA23 /* Release */ = {
+		5993B3AA7FA650A61B4D298E07BCDE44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D07B88F0D78A3E652D2019BE85E49017 /* Pods-Antrah.release.xcconfig */;
+			baseConfigurationReference = EA9C140038CB29F2CC662EA4C3028427 /* Pods-Antrah.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -569,6 +706,23 @@
 			};
 			name = Release;
 		};
+		727403B204EB351CE7041A4B1E9F0AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9F670E8D5BBF0F38B5DED6D5C4A986 /* PixelSDK-GPUImage3.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -637,7 +791,7 @@
 		};
 		9174896C383913C68C8ECBFC083DD0AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C07E27F6280B54FE09151542848F2CC /* Pods-AntrahTests.debug.xcconfig */;
+			baseConfigurationReference = E2DFCC0886587BA88D80D4F2B369CD08 /* Pods-AntrahTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -672,9 +826,65 @@
 			};
 			name = Debug;
 		};
+		A5E3C2305736AE7C640691245984CFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83762A96A9A5871F9AB3C03571E5032E /* PixelSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4D86536127E6A6BEED17D65A3D54AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E724598A5C83D5F86CE73BEF92BE31 /* Pods-Antrah-AntrahUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C24435663DFCA5789F2AFC4EEBF9E541 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66A99918EEF4443D281DA37F4A5E9531 /* Pods-AntrahTests.release.xcconfig */;
+			baseConfigurationReference = 69B9978CBF075F7BEE3D943B59BD1A27 /* Pods-AntrahTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -710,23 +920,95 @@
 			};
 			name = Release;
 		};
+		E7C8BEEF18E33D18178657301BC365F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F17AAD104459A88D44032C91621CE4 /* PixelSDK-GPUImage3.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEED11B26A57E05501D7CAE6A291E13B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7033516D3F42F4443E179AF194042E5 /* Pods-Antrah-AntrahUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Antrah-AntrahUITests/Pods-Antrah-AntrahUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1020BAD4F7E671A97D09B1A373B2FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5AC0300B0B8D792C098EF0EEF448C5 /* PixelSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1283452ED094555F1AAFD1B2BA6A1864 /* Build configuration list for PBXNativeTarget "Pods-Antrah-AntrahUITests" */ = {
+		0421767B1EEFA4DA0BFF17DEFC1D7843 /* Build configuration list for PBXAggregateTarget "PixelSDK-GPUImage3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D69770594ACE28A2492A044A14334BB /* Debug */,
-				53F5A72758E204016E38AF06229E13D6 /* Release */,
+				727403B204EB351CE7041A4B1E9F0AE7 /* Debug */,
+				E7C8BEEF18E33D18178657301BC365F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F52DFD53149EEAB00A2B4363166155B /* Build configuration list for PBXNativeTarget "Pods-Antrah" */ = {
+		367600C5EFB28704E952DDEE49A75A38 /* Build configuration list for PBXAggregateTarget "PixelSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5BF7108844AFE379ECA8855960A263B3 /* Debug */,
-				5F9CE50E998455F6DF0DE10974EDFA23 /* Release */,
+				F1020BAD4F7E671A97D09B1A373B2FB9 /* Debug */,
+				A5E3C2305736AE7C640691245984CFDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -740,11 +1022,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4231F2A943EF66E32D6AE1D15E4EF986 /* Build configuration list for PBXNativeTarget "Pods-Antrah-AntrahUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEED11B26A57E05501D7CAE6A291E13B /* Debug */,
+				B4D86536127E6A6BEED17D65A3D54AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
 				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9B7A26982C60CC94CA67A1FEF82D120 /* Build configuration list for PBXNativeTarget "Pods-Antrah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DFBE4C461F581378BE3862087C6E2B /* Debug */,
+				5993B3AA7FA650A61B4D298E07BCDE44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
